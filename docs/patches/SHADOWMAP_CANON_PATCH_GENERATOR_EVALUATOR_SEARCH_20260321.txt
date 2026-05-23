@@ -1,0 +1,32 @@
+SHADOWMAP_CANON_PATCH_GENERATOR_EVALUATOR_SEARCH_20260321.txt
+
+Purpose
+Promote a compact generator-space / evaluator-landscape subrule into the master canon as a reusable pattern only.
+
+What was added to the master canon
+1. New corpus-derived extension:
+   GENERATOR-SPACE / EVALUATOR-LANDSCAPE SUBRULE
+
+2. New canonized exemplar:
+   FUNSEARCH / FUNBO EXEMPLAR
+
+Core rule
+When the native object is hard to search directly but concise generators can be scored, do not search the raw object first.
+Search the generator family under an evaluator-defined fitness landscape, then inspect the surviving generators for a reduced rule or symmetry that sharpens the next search.
+
+Why it qualifies
+- it appears across more than one domain
+- it sharpens the general method
+- it contributes a durable reusable pattern rather than a one-off detail
+
+What was NOT added
+- no benchmark-specific tables
+- no copied code listings
+- no model-vendor or hyperparameter details
+
+Source-map update
+The source map was updated to record that the promotion came from the FunSearch / FunBO upload cluster and that only the reusable search rule was merged.
+
+Project-instruction implication
+If the updated master canon and source map are re-uploaded under the SAME filenames as the existing canon pair, the project instructions do not need to change.
+If they are uploaded under NEW filenames, the project instructions should be updated to point explicitly to the new filenames.

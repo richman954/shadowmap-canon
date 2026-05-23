@@ -1,0 +1,186 @@
+SHADOWMAP SUBMODULE: SEARCH-UNDER-CONSTRAINT
+DATE: 2026-04-08
+STATUS: DERIVED LOCAL SUBMODULE
+FAMILY: CROSS-FAMILY REUSABLE PROJECTION
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- SEARCH-UNDER-CONSTRAINT.txt
+- SHADOWMAP_SUBMODULE_GENERATOR_EVALUATOR_SEARCH_20260321.txt
+
+PURPOSE
+This file canonizes a reusable local ShadowMap procedure for objects whose visible form is the survivor of sequential choice under bounded resources, active constraints, and evaluator pressure.
+
+KERNEL STATEMENT
+Do not ShadowMap only the finished object.
+ShadowMap the latent constrained search that produced it.
+
+TRIGGER CONDITIONS
+Use this submodule when all or most of the following hold:
+1. The visible object is better understood as the result of a sequential search, construction, decision process, proof process, workflow, or adaptive policy.
+2. The native representation foregrounds the finished artifact but hides the search that generated it.
+3. There is a meaningful state space, operator set, or action family that could have produced alternative trajectories.
+4. Hard and/or soft constraints screen what trajectories can survive.
+5. A heuristic, policy, proposal rule, or local move bias shapes the realized path.
+6. An evaluator, score, aspiration threshold, or stopping rule determines which trajectories are retained or terminated.
+7. The real structural question is not only what happened, but why this survivor path existed instead of nearby alternatives.
+
+PRIMARY REPRESENTATION
+A finished proof, narrative workflow, code trace, institutional outcome, experiment sequence, design history, or policy record.
+
+SHADOW OPERATOR
+Project the visible object into its constrained-search skeleton:
+SM_SC(O) = <X, x0, G, A, C, H, E>
+
+where
+X  = state space
+x0 = initial state
+G  = goal set
+A  = operators / legal moves
+C  = constraints
+H  = heuristic policy or proposal mechanism
+E  = evaluator / score landscape
+
+SHADOW SPACE
+Not the final artifact alone, but:
+- the feasible trajectory manifold
+- the evaluator-defined landscape over that manifold
+- the active bottlenecks
+- the subgoal graph
+- the surviving trajectory class
+
+CORE SPLIT
+The method separates into two coupled layers:
+- visible finished object
+- hidden constrained-search engine
+
+The second layer is the real control surface.
+
+KERNEL ASSEMBLY RULE
+Define the constrained-search projection:
+Pi_SC : O -> (M_f, L_E, B, S)
+
+where
+M_f = feasible manifold of reachable states / trajectories
+L_E = evaluator landscape over the feasible manifold
+B   = active bottlenecks / binding constraints
+S   = subgoal graph
+
+KERNEL ASSEMBLY RULE
+1. Recast the native object as a generator / trajectory / evaluator system.
+2. Identify the feasible state manifold rather than only the realized path.
+3. Separate listed constraints from active constraints.
+4. Infer or reconstruct the local heuristic or proposal rule.
+5. Recover the evaluator geometry that shapes survival, pruning, or stopping.
+6. Identify the subgoal graph that organizes the search.
+7. Extract the surviving trajectory class.
+8. Compress the process to a low-dimensional invariant or reduced rule.
+
+LOCAL ACTION LAW
+For guided local search, use the default form:
+
+a*_t = argmax_{a in A_f(x_t)}
+       [ Delta_G(x_t,a)
+         - lambda kappa(a)
+         - sum_i mu_i phi_i(x_t,a) ]
+
+where
+A_f(x_t)          = feasible operators at state x_t
+Delta_G(x_t,a)    = goal reduction from applying a
+kappa(a)          = operator cost
+phi_i(x_t,a)      = approach-to-constraint or violation penalty
+lambda, mu_i      = weights
+
+Compressed rule:
+MOVE = GOAL REDUCTION - COST - CONSTRAINT PRESSURE
+
+COMPRESSION RULE
+visible object -> constrained generator / policy -> feasible trajectories -> evaluator-shaped survivors -> invariant
+
+INVARIANTS OF CONSTRAINED SEARCH
+A good ShadowMap constrained-search analysis should try to extract:
+I_SC(O) = {
+C_active,
+b_eff,
+gamma_bar,
+rho_prune,
+T_alpha,
+H_pi,
+Sigma_subgoal
+}
+
+Interpretation:
+C_active      = constraints that actually shaped the survivor
+b_eff         = effective branching factor
+gamma_bar     = average goal-contraction rate
+rho_prune     = pruning ratio
+T_alpha       = satisficing time to aspiration threshold
+H_pi          = trajectory entropy
+Sigma_subgoal = subgoal graph structure
+
+STANDARD SHADOWMAP FORM (LOCAL VERSION)
+1. Object: constrained sequential-choice system
+2. Primary representation: finished artifact or visible outcome
+3. Opacity: latent search policy, active constraints, and evaluator geometry are hidden
+4. Shadow operator: constrained-search projection
+5. Shadow space: feasible manifold + evaluator contours + bottlenecks + subgoal graph
+6. Hidden structure recovered: local policy, bottleneck topology, pruning law, survivor basin
+7. Invariant recovered: effective branching, contraction, bottleneck set, satisficing threshold, evaluator signature
+8. Governing math: constrained sequential optimization with heuristic policy
+9. Practical use: recover the real engine of proofs, workflows, institutions, experiments, and algorithms
+10. Verdict: strong when the object is better understood as a survivor of evaluator-shaped constrained search
+11. Next best move: test the recovered invariant on another domain
+
+REUSABLE PROCEDURE
+INPUT:
+- object O
+- reconstructed or hypothesized state space X
+- initial state x0
+- goal set G
+- operator set A
+- hard and soft constraints C
+- heuristic policy H
+- evaluator E
+
+ALGORITHM:
+1. Identify the finished object that is currently being over-read as self-sufficient.
+2. Reconstruct the latent state space and admissible moves.
+3. Mark hard constraints and soft penalties separately.
+4. Identify which constraints were actually active in shaping survival.
+5. Infer the heuristic or local policy that compressed the search.
+6. Recover the evaluator or stopping rule.
+7. Build the subgoal graph and locate the major bottlenecks.
+8. Classify the surviving trajectory class.
+9. Compress the whole process into a low-dimensional invariant or reduced rule.
+10. State the kernel statement in direct operational language.
+
+OUTPUTS
+- constrained-search skeleton
+- active bottleneck map
+- subgoal graph
+- surviving trajectory class
+- low-dimensional invariant
+- reduced ShadowMap verdict
+
+LIMITS
+- Weak if the object is static and no meaningful latent search can be reconstructed.
+- Weak if constraints and evaluator are both too underdetermined to infer.
+- Weak if multiple incompatible search reconstructions fit equally well and no discriminating evidence exists.
+- Weak if the result is only a narrative chronology rather than a real constrained-search geometry.
+- Do not confuse analogy with supported reconstruction.
+
+CURRENT EXEMPLARS UNDER THIS SUBMODULE
+1. Theorem proving under bounded branching and proof-length pressure
+2. Experimental or institutional workflow under budget, timing, and evidence constraints
+
+RELATION TO EXISTING CANON
+This submodule is broader than the generator-space / evaluator-landscape subrule.
+That subrule is a special case where the searched object is a concise generator family under an explicit evaluator.
+
+DISTILLED KERNEL
+The finished object is not the deepest variable.
+It is a survivor of constrained search under evaluator pressure.
+
+PROMOTION RULE
+Do not merge this rule into the master canon yet.
+Promote only if transfer across at least two nontrivial domains shows that the same constrained-search projection yields a durable reusable kernel.
+Do not canonize domain-specific examples, benchmark-specific notation, or one-off story details.

@@ -1,0 +1,76 @@
+SHADOWMAP EXEMPLAR NOTE: GENERATOR-SPACE / EVALUATOR-LANDSCAPE
+DATE: 2026-03-21
+STATUS: DERIVED EXEMPLAR NOTE
+FAMILY: ROUTE / PATH / NETWORK
+PARENT SUBMODULE: SHADOWMAP_SUBMODULE_GENERATOR_EVALUATOR_SEARCH_20260321.txt
+SOURCE BASIS:
+- s41586-023-06924-6.pdf
+- 41586_2023_6924_MOESM1_ESM.pdf
+- 2406.04824v2.pdf
+
+PURPOSE
+This note preserves two compact worked exemplars of the generator-space / evaluator-landscape ShadowMap module:
+A) FunSearch
+B) FunBO
+
+==================================================
+EXEMPLAR A: FUNSEARCH
+==================================================
+
+OBJECT
+Hard combinatorial constructions or heuristics whose direct search space is enormous.
+
+PRIMARY REPRESENTATION
+Raw candidate sets, packings, or direct solutions.
+
+SHADOW OPERATOR
+Search concise generator code under an evaluator rather than searching raw objects directly.
+
+HIDDEN STRUCTURE
+The raw solution is not the deepest object.
+The generator family and its evaluator-defined score geometry contain the usable structure.
+
+LOW-DIMENSIONAL SUMMARY
+object -> generator skeleton -> evaluated generator family -> inspected survivor -> reduced symmetry / new prior
+
+DISTILLED KERNEL
+Search generators, not raw answers.
+Then inspect the surviving generators for a reduced rule that sharpens the next search.
+
+==================================================
+EXEMPLAR B: FUNBO
+==================================================
+
+OBJECT
+Acquisition-function design for Bayesian optimization.
+
+PRIMARY REPRESENTATION
+Handwritten formula families such as EI, UCB, or related closed-form rules.
+
+SHADOW OPERATOR
+Search code-valued acquisition rules under a rollout evaluator that scores full BO behavior.
+
+HIDDEN STRUCTURE
+The real object is not the symbolic formula alone but the induced optimization trajectory across task families.
+
+LOW-DIMENSIONAL SUMMARY
+AF formula -> code policy family -> rollout score -> retained policies -> compressed exploration/exploitation rule
+
+DISTILLED KERNEL
+When local formula inspection is insufficient, evaluate the generator by the trajectory it induces.
+The rollout-defined fitness landscape reveals the policy manifold.
+
+==================================================
+CORPUS-LEVEL DISTILLATION
+==================================================
+
+Shared kernel
+When the native object is too large or opaque, move to generator space, constrain it, let an evaluator define the real fitness landscape, and mine the survivors for reusable reduced structure.
+
+What was promoted
+- the reusable search rule
+
+What was not promoted
+- benchmark tables
+- prompt formatting details
+- model-specific or vendor-specific implementation details

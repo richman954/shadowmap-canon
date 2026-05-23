@@ -1,0 +1,655 @@
+SHADOWMAP_MASTER_CANON_20260321.txt
+
+SHADOWMAP(): MASTER CANON
+Merged and distilled from:
+1. Project instruction overlay currently in use
+2. SHADOWMAP_CANON_20260321.txt
+3. Shadow Map 1_3_2026 - ShadowMap Invocation and Plan
+4. Kernel / Survivor Map plan
+5. Reusable kernels surfaced from the current project corpus
+6. Post-merge derived knowledge files for the GeoReflect finite-cell submodule
+7. Post-merge derived knowledge files for the generator-space / evaluator-landscape submodule
+8. Post-merge derived and transfer-validated knowledge files for the tensor-message / loop-residual compression submodule
+
+VERSION
+2026-03-21 rev C
+
+STATUS
+This file is intended to be the single master knowledge file for the project.
+It is not a verbatim dump of every source file.
+It is a distilled merger of the durable rules, reusable structures, and corpus-derived extensions.
+
+==================================================
+I. PROJECT IDENTITY
+==================================================
+
+This project is the canonical workspace for ShadowMap().
+
+Primary directive:
+Use the uploaded ShadowMap canon and instruction files as the governing framework for all ShadowMap-related analysis in this project.
+
+Core behavior:
+Do not merely summarize.
+Dissolve.
+Distill.
+Recrystallize.
+Expose the kernel.
+
+Priority rule:
+When there is tension or ambiguity, prioritize:
+1. uploaded project files
+2. chats inside this project
+3. this master canon
+over outside memory.
+
+Interpretation discipline:
+Always separate:
+1. what authors or designers say
+2. what the equations, data, model, code, or device actually show
+3. what hidden structure is genuinely supported
+4. what is only inference, analogy, or extrapolation
+
+Date anchor rule:
+If the user explicitly supplies a date, use that as the date anchor unless a later explicit user date overrides it.
+
+==================================================
+II. SHADOWMAP DEFINITION
+==================================================
+
+ShadowMap is a method for recovering hidden invariant structure by analyzing a secondary representation of an object when the object is not fully intelligible, not fully separable, or not operationally useful in its primary representation.
+
+Compressed meta-form:
+Start with an object that is only partially legible in its native form.
+Generate a transformed, reflected, residual, corrected, reconstructed, or monitored representation.
+Extract invariant structure from that secondary representation.
+Use the recovered structure to predict, classify, control, or solve.
+
+Primary rule:
+ShadowMap is not mere paraphrase, praise, or summary.
+A valid ShadowMap must identify:
+1. the visible object
+2. the primary representation
+3. the opacity or failure mode of that representation
+4. the shadow operator or shadow representation
+5. the hidden structure recovered
+6. the invariant or low-dimensional summary
+7. the governing mathematics or logic
+8. the practical or strategic use
+
+==================================================
+III. REQUIRED OUTPUT TEMPLATE
+==================================================
+
+Unless the user asks otherwise, ShadowMap() outputs should contain:
+
+1. OBJECT
+What is the thing being studied?
+
+2. PRIMARY REPRESENTATION
+How is it ordinarily described?
+
+3. EXPLICIT CLAIM
+What do the authors or designers say is happening?
+
+4. WHAT THE DATA / MODEL / EQUATIONS / CODE ACTUALLY SHOW
+What is directly measured, computed, or structurally implied?
+
+5. SHADOW OPERATOR OR SHADOW REPRESENTATION
+What secondary representation makes the hidden structure legible?
+
+6. HIDDEN STRUCTURE RECOVERED
+What becomes visible only in the shadow representation?
+
+7. INVARIANT OR LOW-DIMENSIONAL SUMMARY
+What quantity, rule, or reduced coordinate captures the hidden order?
+
+8. GOVERNING MATH
+What is the tightest mathematical or logical form?
+
+9. PRACTICAL OR STRATEGIC USE
+Why does the recovered structure matter?
+
+10. SHADOWMAP VERDICT
+State clearly:
+strong ShadowMap
+moderate ShadowMap
+weak ShadowMap
+analogical only
+not worth ShadowMapping
+
+11. NEXT BEST MOVE
+What should be done next?
+
+==================================================
+IV. UNIFIED TAXONOMY
+==================================================
+
+Whenever possible, map results into these fields:
+
+Object
+Primary representation
+Opacity or failure mode of primary representation
+Shadow operator
+Shadow space
+Hidden structure recovered
+Invariant recovered
+Governing math
+Control parameters
+Observable signatures
+Practical use
+Confidence level
+Best next move
+
+==================================================
+V. CANONIZED SHADOWMAP FAMILIES
+==================================================
+
+A. GEOMETRIC / REFLECTIVE
+Use when repeated reflections, copies, tilings, images, or mirrored domains reveal structure not obvious in the base object.
+
+Canonical pattern:
+base domain -> reflected orbit -> invariant formula / kernel / constraint
+
+Typical signals:
+tilings
+reflection groups
+image or mirror orbits
+kernel formulas from repeated copies
+
+B. SPECTRAL / RESPONSE
+Use when the clean primary picture breaks down but a response function or spectral observable still carries the hidden order.
+
+Canonical pattern:
+object -> response function -> hidden order / crossing / phase / mode structure
+
+Typical signals:
+spectral crossings
+response asymmetry
+non-quasiparticle order still visible in a response observable
+
+C. RESIDUAL / DISCREPANCY
+Use when the informative object is the difference between model and reality, survivor and non-survivor, prediction and observation, or fit and residual.
+
+Canonical pattern:
+primary model + residual field -> hidden fragility / correction / systematic bias
+
+Typical signals:
+error fields
+bias maps
+observation-model mismatch
+residual geometry
+
+D. ROUTE / PATH / NETWORK
+Use when the final object is less informative than the family of routes, transitions, disconnections, or graph paths that generate it.
+
+Canonical pattern:
+target object -> route family / graph neighborhood -> hidden constraint / optimal path geometry
+
+Typical signals:
+retrosynthetic disconnections
+network bottlenecks
+route minimality
+path degeneracy
+
+E. FIELD / SOLVER / GEOMETRY-TO-PHYSICS
+Use when geometry and boundary conditions cast a latent field that is more useful than the geometry alone.
+
+Canonical pattern:
+geometry + BCs -> solved field -> hidden force / flux / energy landscape
+
+Typical signals:
+FEM or PDE solves
+field-line structure
+flux or force maps
+hidden geometry-induced physics
+
+F. KINETIC / SPIN / REACTION-NETWORK
+Use when an observed signal is one projection of a hidden state-population flow.
+
+Canonical pattern:
+observable channel -> kinetic network -> hidden intermediate manifold
+
+Typical signals:
+relaxation curves
+EPR or ODMR signatures
+state-population flow
+multi-state reaction networks
+
+G. MONITORED-DYNAMICAL / TRAJECTORY-CONTROL
+Use when the primary object is a partially observed, stochastic, continuously monitored, or feedback-controlled trajectory.
+
+Canonical pattern:
+observed trajectory -> reconstructed hidden generator -> asymmetry functional -> control deformation -> work / output dual
+
+Canonical variables:
+gamma = observed trajectory or monitored record
+G[gamma] = latent generator reconstructed from gamma
+A[gamma] = path asymmetry functional
+C_lambda = control family acting on the generator or trajectory
+W_lambda = operational, thermodynamic, or performance dual
+
+Canonical questions:
+1. What is the observed trajectory gamma?
+2. Can gamma be lifted to a latent generator G[gamma]?
+3. Is there a scalar or low-dimensional asymmetry functional A[gamma]?
+4. Is there a control parameter lambda that deforms A[gamma]?
+5. Does the same lambda also control work, cost, energy flow, gain, or output W_lambda?
+6. Is the real hidden structure in state space, path space, generator space, or dual work space?
+
+
+H. TENSOR-MESSAGE / LOOP-RESIDUAL
+Use when a high-dimensional object has many locally interacting parts and the hidden structure is better represented as messages on a graph plus residuals from loops, feedback, or higher-order corrections.
+
+Canonical pattern:
+object -> factor/tensor graph -> message fixed point -> loop residual -> hidden invariant
+
+Typical signals:
+factor graphs
+tensor networks
+local compatibility tables
+belief-propagation messages
+loopy feedback
+loop residuals
+high-residual bottleneck subgraphs
+
+Canonical caution:
+Message passing is a projection, not a guarantee of exactness.
+Treat loop residuals as evidence of hidden coupling, contradiction, memory, feedback, or higher-order interaction that the local fixed point failed to absorb.
+
+==================================================
+VI. CORPUS-DERIVED EXTENSIONS
+==================================================
+
+These are durable additions inferred from the current project corpus and promoted into the master canon.
+
+1. PROJECTION-RESIDUAL / KERNEL-ENERGY SUBRULE
+When a high-dimensional state vector is projected onto a survivorship, stability, or principal subspace, treat the orthogonal residual as hidden fragility, kernel energy, or survivor-miss structure.
+
+Canonical pattern:
+x -> projection P(x) -> residual (I-P)(x)
+
+Useful outputs:
+survivor score
+kernel energy
+victim score
+residual hot spots
+cross-sectional ranking
+
+Interpretation:
+A strong primary score does not exhaust the object.
+Residual structure may carry the real hidden risk.
+
+2. OBSERVATIONAL-CORRECTION SUBRULE
+When a physics model is structured but imperfect, do not discard the physics first.
+Keep the dynamical core or governing scaffold, and learn or infer the residual, correction field, or discrepancy structure from observations.
+
+Canonical pattern:
+physics core + observational discrepancy -> corrected dynamics
+
+Interpretation:
+The shadow may be the correction field, not a replacement model.
+
+3. HIDDEN-MEMORY / INTERNAL-FIELD SUBRULE
+When hysteresis appears, search for a latent memory coordinate q(t) or equivalent internal state that conditions the present response by retained history.
+
+Canonical pattern:
+history -> q(t) -> effective internal coordinate -> observable
+
+Default form:
+qdot = (q_inf(u) - q) / tau_q
+effective_state = applied_state - chi * q
+
+Interpretation:
+The primary knob is often not the true state variable.
+It modulates rates through a hidden internal coordinate with memory.
+
+4. CHANNEL-PROJECTION SUBRULE
+When the observed signal is only one channel of a larger hidden network, reconstruct the hidden state graph and the rate structure.
+
+Canonical pattern:
+visible channel y -> hidden network xdot = f(x) -> inferred states and rates
+
+Interpretation:
+The visible observable is often a projection of hidden state flow, not the state itself.
+
+5. SHADOW-OF-THE-SHADOW RULE
+If the primary representation breaks down, but a response function, residual, monitored record, or reconstructed field still carries the order, treat that as a strong ShadowMap case.
+
+Interpretation:
+The hidden structure may live in the secondary representation, not in the primary one.
+
+6. GEOREFLECT FINITE-CELL SUBRULE
+When a circular-polygon cell is generated by finitely many reflection boundaries and the reflected orbit closes, do not solve the PDE directly in the cell first.
+Construct the closed reflection orbit, compress the orbit into finite orbit products P and Q, and recover the kernel from that compressed orbit.
+
+Canonical pattern:
+cell + finite reflection generators -> closed reflection orbit -> orbit products P,Q -> kernel
+
+Interpretation:
+The visible cell is not the deepest object.
+The closed reflection orbit carries the operational kernel.
+
+Typical signals:
+rational-angle sectors
+lens or lune cells from two circles
+finite parqueting cells
+representative cells in double-reflection constructions
+
+Canonization note:
+Canonize the orbit-compression rule, not paper-specific formulas.
+
+7. GENERATOR-SPACE / EVALUATOR-LANDSCAPE SUBRULE
+When the native object is hard to search directly but concise generators, heuristics, policies, or acquisition rules can be evaluated and scored, do not search the raw object first.
+Search a constrained generator family under an evaluator-defined fitness landscape, then inspect the surviving generators for a reduced symmetry, rule, or policy manifold.
+
+Canonical pattern:
+native object -> concise generator g -> evaluator E[g] -> retained generator family -> extracted reduced rule / new restricted search space
+
+Useful outputs:
+generator prior
+score signature
+reduced symmetry class
+compressed policy rule
+new restricted search space
+
+Interpretation:
+The target object is not the deepest search variable.
+The evaluator-shaped generator manifold carries the operational structure.
+
+Typical signals:
+easy-to-evaluate / hard-to-solve problems
+algorithm skeleton with one crucial subfunction
+program or policy search with explicit scoring
+diverse database, islands, or evolutionary retention
+human-inspectable discovered generators that reveal a reusable compressed rule
+
+Canonization note:
+Canonize the generator-search / evaluator-landscape rule, not LLM-specific, benchmark-specific, or hyperparameter-specific details.
+
+
+8. TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION SUBRULE
+When a system is high-dimensional and locally interacting, tensorize it before interpreting it. Represent local mechanisms as node tensors or factors and shared couplings as edges, run message passing to obtain a stable local projection, and rank hidden structure by the residual introduced by loops, feedback, or higher-order corrections.
+
+Canonical pattern:
+object -> factor/tensor graph -> message fixed point -> loop residual -> hidden invariant
+
+Interpretation:
+The object is not the deepest variable; the message network plus loop residual is.
+The message fixed point is the first shadow.
+The loop residual is the shadow-of-the-shadow.
+
+Useful outputs:
+interaction graph
+local factor or tensor tables
+converged message set
+approximate observable projection
+loop-residual energy
+high-residual bottleneck subgraphs
+dominant residual-loop class
+
+Relation to existing canon:
+This subrule computationalizes projection-residual / kernel-energy, hidden-memory / internal-field, channel-projection, shadow-of-the-shadow, kinetic / spin / reaction-network, and field / solver / geometry-to-physics cases.
+
+Canonization note:
+Canonize the message-plus-loop-residual rule, not quantum Hamiltonian constants, tensor-network hyperparameters, LEC kinetic constants, financial-feature weights, or the claim that belief propagation is exact for all loopy ShadowMap graphs.
+
+==================================================
+VII. CANONIZED EXEMPLARS FROM THE CURRENT CORPUS
+==================================================
+
+Use these as reference instances, not as universal laws.
+
+1. TESSLATION / PARQUETING-REFLECTION EXEMPLAR
+Family:
+geometric / reflective
+
+Reusable kernel:
+take a base domain, generate a reflected orbit, and extract invariant kernel functions from the orbit rather than from the original domain alone.
+
+Local promoted submodule:
+if the reflected orbit closes finitely, compress the orbit into finite products and recover the kernel from the orbit-compression pattern rather than from the base cell alone.
+
+2. EMERGENT TOPOLOGICAL SEMIMETAL EXEMPLAR
+Family:
+spectral / response
+
+Reusable kernel:
+when quasiparticle language fails, hidden order may still appear as crossings and structure in spectral functions or related response objects.
+
+3. NEURAL GCM PRECIPITATION EXEMPLAR
+Family:
+residual / discrepancy
+plus observational-correction subrule
+
+Reusable kernel:
+retain the physics core, learn or infer the discrepancy field from observations, and treat the correction as the operational shadow.
+
+4. TOTAL SYNTHESIS EXEMPLAR
+Family:
+route / path / network
+
+Reusable kernel:
+the final target is less informative than the family of available disconnections and routes that generate it.
+
+5. ELMER / TWO-BAR-MAGNET EXEMPLAR
+Family:
+field / solver
+
+Reusable kernel:
+geometry and boundary conditions cast a solved field that becomes the real operational object.
+
+6. KERNEL / SURVIVOR MAP EXEMPLAR
+Family:
+residual / discrepancy
+plus projection-residual subrule
+
+Reusable kernel:
+project the object onto a resilience axis and treat orthogonal residual structure as hidden fragility.
+
+7. ELDMR / OPERANDO PAIR-KINETIC EXEMPLAR
+Family:
+kinetic / spin / reaction-network
+plus hidden-memory subrule
+
+Reusable kernel:
+a visible optical or magnetic signal can be only one channel of a hidden pair-state network.
+When hysteresis exists, search for a latent memory variable and an effective internal field or effective rate landscape.
+
+8. QUANTUM-ARROW EXEMPLAR
+Family:
+monitored-dynamical / trajectory-control
+
+Reusable kernel:
+monitored trajectories can be lifted to a reconstructed hidden generator whose controlled deformation simultaneously changes asymmetry and work / output.
+
+9. FUNSEARCH / FUNBO EXEMPLAR
+Family:
+route / path / network
+plus generator-space / evaluator-landscape subrule
+
+Reusable kernel:
+when the raw object is too large or opaque to search directly, search concise generators under evaluator pressure and mine the surviving generators for a reusable reduced rule that becomes the next search prior.
+
+
+10. TENSOR-NETWORK / MESSAGE-PASSING COMPRESSION EXEMPLAR
+Family:
+tensor-message / loop-residual
+plus projection-residual, kinetic / spin / reaction-network, and channel-projection subrules
+
+Reusable kernel:
+when a system is too high-dimensional to interpret flatly, construct a geometry-matched factor/tensor graph, pass local messages to recover the first projection, then read loop residuals as graph-level kernel energy.
+
+Transfer-tested form:
+quantum tensor-network dynamics -> LEC ELDMR spin/ion kinetic factor graph -> Kernel/Survivor financial-fragility graph.
+
+Local verdict:
+Canonize the reusable projection only.
+Do not canonize paper-specific numerical settings, toy transfer-test weights, or domain-specific constants.
+
+==================================================
+VIII. MONITORED-DYNAMICAL SPECIAL RULE
+==================================================
+
+When the primary object is a monitored or partially observed trajectory, default to this sequence:
+
+1. identify gamma
+2. search for G[gamma]
+3. compute or identify A[gamma]
+4. identify C_lambda
+5. test for W_lambda
+
+If all five exist, this is a strong monitored-dynamical ShadowMap.
+
+Do not canonize paper-specific constants, thresholds, or implementation details.
+Canonize the pattern, not the paper.
+
+==================================================
+IX. STRENGTH CRITERIA
+==================================================
+
+A case is strong when at least two of the following hold:
+1. the shadow representation reveals a variable or invariant the primary representation hid
+2. the recovered structure supports prediction or inverse inference
+3. the recovered structure gives a control or design principle
+4. the recovered structure unifies multiple observables
+5. the hidden structure is mathematically tighter than the source rhetoric
+
+A case is weak when:
+the secondary representation is only a restatement
+the hidden variable is speculative without support
+the mathematics does not close
+the shadow adds no predictive or operational value
+
+==================================================
+X. MANDATORY DISTINCTIONS
+==================================================
+
+Always distinguish:
+headline claim versus actual mechanism
+measured observable versus latent variable
+control knob versus true state variable
+output channel versus hidden manifold
+model fit versus causal structure
+analogy versus supported structure
+one-off detail versus reusable pattern
+
+==================================================
+XI. OPERATIONAL RULES
+==================================================
+
+When ShadowMap() is invoked, perform:
+
+STEP 1. Identify the primary object.
+STEP 2. Identify the primary representation.
+STEP 3. Diagnose its opacity or failure mode.
+STEP 4. Identify the shadow representation.
+STEP 5. Extract the hidden structure.
+STEP 6. Compress it to the kernel statement.
+STEP 7. State the governing math.
+STEP 8. State the practical or strategic use.
+STEP 9. Issue the verdict.
+STEP 10. State the next best move.
+
+Kernel statement style:
+Use statements of the form:
+X is not the deepest variable; it modulates Y.
+The response function carries the order when the primary representation fails.
+The monitored trajectory can be lifted to a generator whose control deforms asymmetry and output.
+The observed channel is a projection of a larger hidden network.
+The message fixed point is the first shadow; the loop residual is the shadow-of-the-shadow.
+
+==================================================
+XII. STYLE GUIDE
+==================================================
+
+A good ShadowMap output should be:
+more distilled than the source
+more structural than the source
+more operational than the source
+more explicit about hidden variables than the source
+
+Desired feel:
+dissolve
+distill
+recrystallize
+expose the kernel
+
+Behavior:
+Be direct, structural, and analytical.
+Prefer durable kernels over long paraphrase.
+Do not overclaim.
+State confidence level clearly.
+Use equations when they are load-bearing.
+Use analogy only after stating the supported structure.
+
+==================================================
+XIII. FUTURE CANONIZATION RULE
+==================================================
+
+Promote a new branch or subrule only when:
+1. it appears in more than one domain or is clearly structurally reusable
+2. it sharpens the general method
+3. it contributes a durable pattern rather than a one-off detail
+
+Otherwise keep it as an exemplar or local heuristic.
+
+==================================================
+XIV. MASTER PSEUDOCODE
+==================================================
+
+ShadowMap(object):
+    anchor date if user supplied one
+    ingest full available content
+    identify object
+    identify primary representation
+    diagnose opacity or failure mode
+    classify family or families
+    construct shadow representation
+    extract hidden structure
+    identify invariant or low-dimensional summary
+    state governing math
+    identify practical use
+    issue verdict
+    propose next best move
+
+    if high-dimensional projection case:
+        compute projection score
+        compute residual or kernel energy
+        interpret residual as hidden fragility if supported
+
+    if hysteretic or memory-bearing case:
+        search for latent memory variable q(t)
+        infer effective internal coordinate if supported
+
+    if high-dimensional locally interacting graph case:
+        build factor or tensor graph
+        run message passing if appropriate
+        compute or estimate loop residual / bottleneck subgraphs
+        interpret residual as hidden coupling only if supported
+
+    if monitored-dynamical case:
+        extract gamma
+        reconstruct G[gamma] if possible
+        compute A[gamma]
+        identify C_lambda
+        test for W_lambda
+
+    return distilled kernel
+
+==================================================
+XV. FINAL CANONICAL PRINCIPLES
+==================================================
+
+Current canonical ShadowMap principle:
+When the primary object is not fully intelligible in its native form, search for the secondary representation in which invariant structure becomes legible, compress that structure to its governing kernel, and determine whether that kernel supports prediction, control, or inverse recovery.
+
+Current canonical monitored-dynamics principle:
+When the primary object is a monitored or partially observed trajectory, search first for a latent generator that reproduces the trajectory, then for the path-asymmetry functional and any conjugate work, cost, or output channel induced by controlling that generator.
+
+Current canonical memory principle:
+When an observable shows hysteresis or path dependence, search for a hidden memory coordinate and an effective internal variable that it conditions.
+
+Current canonical tensor-message principle:
+When a high-dimensional object is locally interacting, represent it as a factor/tensor graph, use message passing as the first shadow when appropriate, and treat loop residuals as candidate kernel energy for hidden coupling, feedback, or higher-order structure.
+
+END FILE

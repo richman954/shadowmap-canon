@@ -1,0 +1,29 @@
+SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321.txt
+
+This companion note explains what was merged into SHADOWMAP_MASTER_CANON_20260321.txt.
+
+Included directly:
+- the project instruction overlay currently in use
+- the canonical definitions, taxonomy, family types, monitored-dynamical branch, strength criteria, and pseudocode from SHADOWMAP_CANON_20260321.txt
+
+Distilled and promoted from older project materials:
+- the corpus-wide meta-form and exemplar ranking logic from Shadow Map 1_3_2026 - ShadowMap Invocation and Plan
+- the projection-residual / kernel-energy lens from the Kernel / Survivor Map plan
+
+Distilled and promoted from post-merge derived knowledge files:
+- the GeoReflect finite-cell submodule from the tessellation-derived sector, Almaty-apple, and lens/lune analyses
+- the generator-space / evaluator-landscape submodule from the FunSearch / FunBO upload cluster
+- the tensor-message / loop-residual compression submodule from the tensor-network quantum-dynamics paper and the transfer-validation files spanning LEC ELDMR and Kernel/Survivor factor-graph tests
+
+Distilled but NOT copied verbatim:
+- long conversational transcripts and one-off simulation code from SHADOWMAP_03142026.txt and related extracted files
+- scientific paper contents were not merged verbatim; only reusable ShadowMap kernels were promoted into exemplar sections or compact subrules
+- the GeoReflect finite-cell promotion was merged only as an orbit-compression rule; paper-specific formulas were not copied into the canon
+- the generator-space / evaluator-landscape promotion was merged only as a reusable search rule; LLM-vendor details, hyperparameters, and benchmark-specific tables were not copied into the canon
+- the tensor-message / loop-residual promotion was merged only as a reusable graph/message/residual projection; quantum-specific Hamiltonians, tensor-network hyperparameters, LEC kinetic constants, financial weights, and toy transfer-test factor values were not copied into the canon
+
+Result:
+- the master canon is meant to replace a stack of partially overlapping instruction files with one stable, distilled source
+- the geometric / reflective family explicitly contains a local GeoReflect finite-cell subrule, promoted because it recurred across multiple domains and sharpened the method
+- the canon now also contains a reusable generator-space / evaluator-landscape subrule for hard-solve / easy-evaluate settings where hidden order appears more clearly in the evaluated generator family than in the raw object
+- the canon now also contains a tensor-message / loop-residual compression subrule for high-dimensional locally interacting systems where hidden structure appears in message fixed points and loop residuals

@@ -1,0 +1,37 @@
+SHADOWMAP UPDATE ACTIONS: TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION, TRANSFER-TESTED
+DATE: 2026-05-23
+
+RECOMMENDED PATH
+Upload these files into the project as supporting local knowledge files:
+- SHADOWMAP_TRANSFER_TEST_TENSOR_MESSAGE_ELDMR_20260523.txt
+- SHADOWMAP_TRANSFER_TEST_TENSOR_MESSAGE_KERNEL_SURVIVOR_20260523.txt
+- SHADOWMAP_CANON_PATCH_TENSOR_MESSAGE_COMPRESSION_TRANSFER_TESTED_20260523.txt
+- SHADOWMAP_TENSOR_MESSAGE_PASSING_TRANSFER_TESTS.py
+- SHADOWMAP_TENSOR_MESSAGE_TRANSFER_RESULTS_20260523.json
+- SHADOWMAP_TENSOR_MESSAGE_TRANSFER_RESULTS_20260523.csv
+
+DO NOT REPLACE YET
+Do not replace:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321.txt
+unless you deliberately want this new subrule merged into the master canon.
+
+WHY
+The kernel has now passed structural transfer tests, but the safest project-management path is to keep the transfer-tested patch local until the user explicitly promotes it.
+
+IF PROMOTING
+Create revised master-canon/source-map files under the same filenames or under REV_C filenames.
+Add the Tensor-Message / Loop-Residual Compression subrule after the Generator-Space / Evaluator-Landscape subrule.
+Update the source map to say the rule was derived from the tensor-network paper and transfer-tested on ELDMR and Kernel/Survivor graphs.
+
+WHAT NOT TO PROMOTE
+- toy factor weights
+- exact transfer-test numeric values as universal constants
+- BP as a universal exact solver
+- quantum-specific implementation details
+
+BEST NEXT MOVE AFTER UPLOAD
+Fit this submodule to one real dataset:
+1. raw ELDMR sweep channels, or
+2. actual Kernel/Survivor feature matrix.
+Then compare graph-level K_loop against the existing flat residual KernelEnergy.

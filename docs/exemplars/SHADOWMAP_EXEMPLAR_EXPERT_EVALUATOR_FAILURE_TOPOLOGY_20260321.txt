@@ -1,0 +1,110 @@
+SHADOWMAP EXEMPLAR NOTE: CURATED-CORPUS / EVALUATOR-GEOMETRY / FAILURE-TOPOLOGY
+DATE: 2026-03-21
+STATUS: DERIVED EXEMPLAR NOTE
+FAMILY: EVALUATOR / BENCHMARK / EPISTEMIC-CONTROL
+PARENT SUBMODULE: SHADOWMAP_SUBMODULE_CURATED_CORPUS_EVALUATOR_GEOMETRY_FAILURE_TOPOLOGY_20260321.txt
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- guo-et-al-2026-expert-evaluation-of-llm-world-models-a-high-tc-superconductivity-case-study.pdf
+- pnas.2533676123.sapp.pdf
+- high_tc_failure_topology_map.xlsx
+- high_tc_failure_topology_map.csv
+
+PURPOSE
+This note preserves the high-Tc superconductivity expert-benchmark case as a worked ShadowMap exemplar.
+The goal is not to restate average benchmark scores, but to preserve the deeper kernel recovered after projecting question-level answers into evaluator space and then into a failure-topology map.
+
+OBJECT
+A curated expert benchmark asking whether LLM-based assistants can answer deep scientific questions at near-expert level in cuprate high-Tc superconductivity.
+
+PRIMARY REPRESENTATION
+Mean system scores across rubric axes:
+- balanced perspective
+- factual comprehensiveness
+- succinctness
+- supported by evidence
+- image relevance
+
+VISIBLE CLAIM
+Curated-literature RAG systems improve quality relative to open-web systems, but current models still fall short of expert needs.
+
+SHADOW OPERATOR
+Project raw answers into:
+1. blinded expert rubric space
+2. question-level evaluator comments
+3. dominant failure classes
+
+HIDDEN STRUCTURE
+The answer text is not the deepest object.
+The evaluator-induced failure surface reveals the real epistemic pipeline:
+- source discipline
+- conceptual retrieval depth
+- temporal/context judgment
+- visual reasoning capability
+
+LOW-DIMENSIONAL SUMMARY
+question -> evidence demand -> evaluator projection -> dominant failure family -> design correction
+
+CURRENT FAILURE-TOPOLOGY MAP SNAPSHOT
+Question count: 67
+Dominant-failure counts from the current map:
+- retrieval_miss: 43
+- source_noise: 14
+- temporal_context: 6
+- figure_reasoning: 4
+
+Confidence mix:
+- high: 25
+- medium: 7
+- low: 35
+
+Interpretation:
+The current map is mixed-confidence.
+High-confidence rows come from explicit paper examples and evaluator comments.
+Low-confidence rows are inference-weighted where the exported sheets are sparse.
+
+HIGH-CONFIDENCE ANCHORS
+Q1. Evidence for the quantum critical point scenario
+Dominant failure: retrieval_miss
+Kernel: systems miss conceptually relevant references even when present in the curated corpus.
+
+Q4. Pairing symmetry of cuprate high-Tc superconductors
+Dominant failure: temporal_context
+Secondary: source_noise
+Kernel: systems mix outdated claims with later corrections and sometimes attach irrelevant citations.
+
+Q6. How large are the vortices in high-Tc superconductors?
+Dominant failure: figure_reasoning
+Kernel: systems can surface images but fail to read the scale bar and infer the quantitative length scale.
+
+Q27. Magnitude and physical interpretation of the Nernst effect
+Dominant failure: figure_reasoning
+Kernel: systems do not reliably infer order of magnitude and temperature structure directly from plots.
+
+Q33. Doping level of the Lifshitz transition in LSCO
+Dominant failure load: relatively low
+Kernel: scalar factual questions are much easier than multi-perspective or figure-driven questions.
+
+DISTILLED KERNEL
+The mean score is not the deepest variable; it aggregates over different epistemic failure loads.
+The reusable object is the evaluator-induced failure topology.
+
+KERNEL STATEMENT
+When an expert benchmark provides question-level grading and comments, treat the evaluator-induced failure surface as the real shadow representation.
+The benchmark score table is only a projection of that deeper topology.
+
+WHAT THIS EXEMPLAR PRESERVES
+- the four recurrent failure classes
+- the question-to-failure mapping
+- the separation between directly supported versus inference-weighted assignments
+- the design lesson that retrieval and figure surfacing are not the same as conceptual or visual reasoning
+
+WHAT THIS EXEMPLAR DOES NOT PRESERVE
+- paper-specific p-value tables as canon
+- model-vendor branding
+- benchmark-specific prompt formatting
+- high-Tc domain content as if it were a universal rule
+
+LOCAL VERDICT
+Strong exemplar.
+Keep as a local knowledge file and transfer-test before canon promotion.

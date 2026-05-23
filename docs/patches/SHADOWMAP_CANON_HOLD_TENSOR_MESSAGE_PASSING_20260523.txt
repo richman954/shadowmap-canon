@@ -1,0 +1,64 @@
+SHADOWMAP CANON HOLD NOTE: TENSOR / MESSAGE-PASSING COMPRESSION
+DATE: 2026-05-23
+STATUS: DO NOT MERGE INTO MASTER CANON YET
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- SHADOWMAP_SUBMODULE_TENSOR_MESSAGE_PASSING_COMPRESSION_20260523.txt
+- SHADOWMAP_EXEMPLAR_TENSOR_NETWORK_QUANTUM_DYNAMICS_20260523.txt
+- 2503.05693v3.pdf
+
+PURPOSE
+Record the canon decision for the tensor / message-passing compression kernel derived from the tensor-network quantum-dynamics paper and the user-provided tensor-network visual material.
+
+DECISION
+Hold as:
+- one local submodule
+- one worked exemplar
+Do not patch the master canon or source map yet.
+
+WHY THE HOLD IS CORRECT
+The kernel is strong and operational:
+- it sharpens the general method
+- it exposes a computational hidden variable: message fixed point plus loop residual
+- it connects directly to existing ShadowMap rules: projection-residual, channel-projection, field/solver, kinetic-network, and shadow-of-shadow
+
+But current direct evidence is mainly one scientific domain: tensor-network quantum dynamics.
+The master-canon promotion rule requires recurrence across domains or clearly durable reuse before promotion.
+
+CURRENT ASSESSMENT AGAINST FUTURE CANONIZATION RULE
+1. Appears in more than one domain or is clearly structurally reusable:
+   promising, but not yet demonstrated by a second written transfer test
+2. Sharpens the general method:
+   yes
+3. Contributes a durable pattern rather than a one-off detail:
+   likely, but not yet proven by transfer
+
+RESULT
+Hold locally.
+The correct current status is:
+- exemplar: yes
+- local submodule: yes
+- master-canon patch: no
+
+WHAT COULD BE PROMOTED LATER
+Potential future reusable rule:
+When a high-dimensional object has local coupling structure, build a factor/tensor graph, use message passing as the first shadow, and treat loop residuals as graph-level kernel energy.
+
+WHAT MUST NOT BE PROMOTED
+- quantum spin-glass-specific details
+- D-Wave comparison details
+- bond dimensions, lattice names, or hyperparameters
+- paper-specific numerical values
+- a purely visual metaphor without graph/factor construction
+
+RELEASE CONDITION FROM HOLD
+Promote only after one additional nontrivial domain shows the same structure:
+- object can be tensorized or factorized
+- message fixed point is meaningful
+- loop residual identifies hidden structure better than the primary representation
+- the recovered kernel supports prediction, inverse inference, design, or control
+
+NEXT TRANSFER TESTS
+1. ELDMR pair-kinetic model: states and transitions as a factor graph; loop residuals expose field-memory coupling.
+2. Kernel/Survivor Map: features and stress channels as factor graph; loop residuals expose coupled fragility.
+3. Expert-evaluator failure topology: questions, sources, rubric axes, and failures as factor graph; loop residuals expose compound epistemic failure.

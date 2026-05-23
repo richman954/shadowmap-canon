@@ -1,0 +1,75 @@
+SHADOWMAP CANON PATCH: SEARCH-UNDER-CONSTRAINT
+DATE: 2026-04-08
+STATUS: PROPOSED CANON PATCH
+
+Purpose
+Promote a compact search-under-constraint subrule into the master canon as a reusable pattern only.
+
+What would be added to the master canon
+1. New corpus-derived extension:
+   SEARCH-UNDER-CONSTRAINT SUBRULE
+
+Core rule
+When a visible object is the survivor of sequential choice under active constraints, do not ShadowMap the finished artifact first.
+Project it into its constrained-search skeleton, recover the feasible manifold, evaluator geometry, and active bottlenecks, then compress the survivor path into a reusable invariant.
+
+Canonical pattern
+native object -> constrained generator or policy -> feasible trajectories -> evaluator-shaped survivors -> invariant
+
+Why it qualifies
+- it is clearly structurally reusable across proofs, workflows, designs, and policies
+- it sharpens the general method by exposing the latent search rather than only the endpoint
+- it contributes a durable reusable projection rather than a one-off domain detail
+
+What would NOT be added
+- no domain-specific proof notation
+- no organization-specific workflow story
+- no one-off mathematical symbols beyond the minimal reusable skeleton
+- no benchmark-specific examples as canon law
+
+Suggested master-canon insertion point
+Add this as a new corpus-derived extension after the GENERATOR-SPACE / EVALUATOR-LANDSCAPE SUBRULE, with an explicit note that generator-space / evaluator-landscape is a special case of the broader constrained-search projection.
+
+Suggested canon text
+8. SEARCH-UNDER-CONSTRAINT SUBRULE
+When the visible object is the survivor of sequential choice under bounded resources, do not analyze the finished artifact first.
+Project the object into its constrained-search skeleton <X, x0, G, A, C, H, E>, recover the feasible trajectory manifold, evaluator geometry, and active bottlenecks, and compress the survivor path into a low-dimensional invariant.
+
+Canonical pattern:
+object -> constrained search -> evaluator-shaped survivor path -> invariant
+
+Interpretation:
+The finished object is not the deepest variable.
+It is a survivor of constrained search under evaluator pressure.
+
+Useful outputs:
+active constraints
+effective branching
+pruning ratio
+subgoal graph
+satisficing threshold
+surviving trajectory class
+
+What should also be added to the source map
+Record that the promotion came from:
+- SEARCH-UNDER-CONSTRAINT.txt
+- the local submodule and exemplar derived on 2026-04-08
+and that only the reusable constrained-search projection was merged.
+
+Suggested source-map note
+Distilled and promoted from post-merge derived knowledge files:
+- the search-under-constraint projection, which generalizes generator-space / evaluator-landscape by treating finished objects as survivors of evaluator-shaped constrained search
+
+Distilled but NOT copied verbatim:
+- local examples, notation variants, and explanatory prose from the 2026-04-08 search-under-constraint draft files
+
+Project-instruction implication
+If the updated master canon and source map are re-uploaded under the SAME filenames as the existing canon pair, the project instructions do not need to change.
+If they are uploaded under NEW filenames, the project instructions should be updated to point explicitly to the new filenames.
+
+Recommended current decision
+Do not replace the master canon yet.
+Keep this patch local until one more nontrivial transfer test is written up.
+
+Release condition from hold
+Promote after at least one additional nontrivial domain confirms that the same constrained-search projection yields a durable reusable kernel rather than only a persuasive analogy.

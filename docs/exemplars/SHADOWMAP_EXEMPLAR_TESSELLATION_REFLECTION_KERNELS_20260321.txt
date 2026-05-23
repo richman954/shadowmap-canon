@@ -1,0 +1,122 @@
+SHADOWMAP EXEMPLAR NOTE: TESSELLATION / REFLECTION KERNELS
+DATE: 2026-03-21
+STATUS: DERIVED EXEMPLAR NOTE
+FAMILY: GEOMETRIC / REFLECTIVE
+PARENT SUBMODULE: SHADOWMAP_SUBMODULE_GEOREFLECT_FINITE_CELL_20260321.txt
+SOURCE BASIS:
+- Full article_ Beauty in_of mathematics_ tessellations and their formulas.pdf
+
+PURPOSE
+This note preserves two explicit worked exemplars of the GeoReflect finite-cell ShadowMap module:
+A) circle sector D_alpha
+B) Almaty-apple representative finite cell D_2
+
+==================================================
+EXEMPLAR A: CIRCLE SECTOR D_alpha
+==================================================
+
+OBJECT
+D_alpha = { z in C : |z| < 1, 0 < arg z < alpha*pi }, 0 < alpha < 2.
+
+PRIMARY REPRESENTATION
+A wedge cut from the unit disc.
+
+SHADOW OPERATOR
+Repeated reflection at the two bounding rays, together with the induced trace orbit of a point.
+
+HIDDEN STRUCTURE
+The sector is only the generator. The real computational object is the reflection orbit of the cell and the trace orbit of a point.
+
+SEED KERNEL
+Upper half-disc D_+ seed Green kernel:
+G_{D_+}(z,zeta) = log | ((1-conj(z)*zeta)(zeta-conj(z))) / ((zeta-z)(1-z*zeta)) |^2
+
+Closed-form sector kernel obtained by conformal lift z -> z^(1/alpha):
+G_{D_alpha}(z,zeta) =
+log | ((1-(conj(z)*zeta)^(1/alpha)) / (zeta^(1/alpha)-z^(1/alpha)))
+      * ((zeta^(1/alpha)-conj(z)^(1/alpha)) / (1-(z*zeta)^(1/alpha))) |^2
+
+RATIONAL-ANGLE ORBIT FORM
+If alpha = m/n with 0 < m < n, repeated reflections generate a finite orbit of sectors and the point trace:
+- z_(2k)   = exp(2*k*m*pi*i/n) * conj(z)
+- z_(2k+1) = exp(2*k*m*pi*i/n) * z
+
+Compressed orbit product:
+P_sector(z,zeta) =
+prod_{k=1}^n [ (zeta - exp(2*k*m*pi*i/n) conj(z)) / (zeta - exp(2*k*m*pi*i/n) z) ]
+                  [ (zeta*conj(z) - exp(2*k*m*pi*i/n)) / (zeta*z - exp(2*k*m*pi*i/n)) ]
+
+which compresses to:
+P_sector(z,zeta) = ((zeta^n - conj(z)^n)/(zeta^n - z^n))
+                   * ((1-(conj(z)*zeta)^n)/(1-(z*zeta)^n))
+
+Then:
+G(z,zeta) = log |P_sector(z,zeta)|^2
+
+LOW-DIMENSIONAL SUMMARY
+sector -> reflection orbit -> orbit product -> Green kernel
+
+DISTILLED KERNEL
+The sector is not the deepest object; it generates a reflection orbit.
+That orbit, or its conformally compressed image, carries the Green kernel.
+
+==================================================
+EXEMPLAR B: ALMATY-APPLE REPRESENTATIVE CELL D_2
+==================================================
+
+OBJECT
+Representative finite reflection cell:
+D_2 = { z + conj(z) < 1, |z-1| < 1 }
+inside the Almaty-apple construction.
+
+PRIMARY REPRESENTATION
+A visually apple-like region cut by a line and a circle.
+
+SHADOW OPERATOR
+Two reflections:
+1. reflection at the line z + conj(z) = 1
+2. reflection through the unit circle, mapping that line to the circle |z-1| = 1
+
+HIDDEN STRUCTURE
+The single apple-like cell is not the operational object. The reflected-cell system and the compressed point-trace orbit carry the kernel.
+
+REPRESENTATIVE TRACE ORDER (z in D_2)
+The paper records the reflected trace order as:
+z_1 in hat(D_2)
+z_2 in hat(D_3)
+z_3 in D_1
+z_4 in D_3
+z_5 in hat(D_1)
+
+COMPRESSED ORBIT PRODUCTS
+Define:
+P_AA(z,zeta) =
+((1-z*conj(zeta))/(zeta-z))
+((zeta-(1-conj(z)))/(1-z+z*zeta))
+((conj(z)*(1-zeta)+zeta)/(1-(1-z)*zeta))
+
+Q_AA(z,zeta) =
+(zeta-z)(1-z*conj(zeta))(1-z+z*zeta)(zeta-(1-conj(z)))
+(1-(1-z)*zeta)(conj(z)*(1-zeta)+zeta)
+
+Then:
+G_{D_2}(z,zeta) = log |P_AA(z,zeta)|^2
+N_{D_2}(z,zeta) = -log |Q_AA(z,zeta)|^2
+
+LOW-DIMENSIONAL SUMMARY
+finite cell -> double reflection orbit -> compressed orbit product -> kernel
+
+DISTILLED KERNEL
+The apple cell is not the deepest object; the double reflection orbit is.
+Once the orbit closes, the Green and Neumann kernels are the log-magnitude of the compressed orbit products.
+
+==================================================
+JOINT SHADOWMAP TAKEAWAY
+==================================================
+
+Shared rule across both exemplars:
+visible cell -> reflection orbit -> compressed orbit product -> PDE kernel
+
+This is the durable structure worth preserving.
+Do not promote to master-canon revision yet.
+Promote only after at least one additional nontrivial geometry confirms the same procedure and compression rule.

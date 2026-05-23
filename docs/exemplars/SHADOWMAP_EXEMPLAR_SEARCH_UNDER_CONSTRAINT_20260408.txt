@@ -1,0 +1,126 @@
+SHADOWMAP EXEMPLAR NOTE: SEARCH-UNDER-CONSTRAINT
+DATE: 2026-04-08
+STATUS: DERIVED EXEMPLAR NOTE
+FAMILY: ROUTE / PATH / NETWORK
+PARENT SUBMODULE: SHADOWMAP_SUBMODULE_SEARCH_UNDER_CONSTRAINT_20260408.txt
+SOURCE BASIS:
+- SEARCH-UNDER-CONSTRAINT.txt
+- SHADOWMAP_MASTER_CANON_20260321.txt
+
+PURPOSE
+This note preserves two compact worked exemplars of the search-under-constraint ShadowMap projection:
+A) theorem proving
+B) experimental / organizational workflow
+
+==================================================
+EXEMPLAR A: THEOREM PROVING
+==================================================
+
+OBJECT
+A finished proof.
+
+PRIMARY REPRESENTATION
+A linear derivation written as if the proof were the object.
+
+SHADOW OPERATOR
+Project the finished proof into its constrained-search skeleton:
+- state space = sets of derived formulas
+- initial state = premises and available lemmas
+- goal set = target theorem
+- operators = rules of inference and admissible proof moves
+- constraints = memory, branching, proof length, available intermediate lemmas
+- heuristic = backward chaining, means-ends, nearest-goal reduction, lemma reuse
+- evaluator = goal proximity minus cost and contradiction pressure
+
+HIDDEN STRUCTURE
+The derivation is not the deepest object.
+The real object is the search policy that emitted a surviving proof path under branching pressure.
+
+ACTIVE BOTTLENECKS
+Typical active constraints:
+- branching explosion
+- proof-length growth
+- missing intermediate lemma availability
+- local dead-end density
+
+LOW-DIMENSIONAL SUMMARY
+proof -> constrained inference search -> pruned survivor path -> compressed proof policy
+
+DISTILLED KERNEL
+The theorem was not simply proved.
+The proof survived because a heuristic compressed branching under active bottlenecks.
+
+PRACTICAL USE
+- compare rival proof styles by effective branching factor rather than elegance language alone
+- identify when a proof is really a lemma-discovery problem
+- recover which missing lemmas dominate search difficulty
+
+==================================================
+EXEMPLAR B: EXPERIMENTAL / ORGANIZATIONAL WORKFLOW
+==================================================
+
+OBJECT
+A finished experimental plan, process decision, or organizational action sequence.
+
+PRIMARY REPRESENTATION
+A narrative history or final approved workflow.
+
+SHADOW OPERATOR
+Project the visible workflow into its constrained-search skeleton:
+- state space = feasible project or process states
+- initial state = current materials, prior evidence, resource position
+- goal set = validated result, approved plan, or successful deployment
+- operators = experiments, meetings, procurement choices, analytical tests, design revisions
+- constraints = time, budget, safety, instrument access, management approval, evidence sufficiency
+- heuristic = nearest-risk reduction, cheapest discriminating test first, fastest path to decision-quality evidence
+- evaluator = expected decision value minus cost, delay, and risk accumulation
+
+HIDDEN STRUCTURE
+The final workflow is not the deepest object.
+It is the survivor of a bounded search over possible action sequences.
+
+ACTIVE BOTTLENECKS
+Typical active constraints:
+- instrument bottleneck
+- approval bottleneck
+- evidence threshold bottleneck
+- time-to-result bottleneck
+
+LOW-DIMENSIONAL SUMMARY
+workflow -> constrained action search -> evaluator-shaped survivor sequence -> reduced operating rule
+
+DISTILLED KERNEL
+The chosen workflow did not happen because it was the only sequence.
+It survived because it passed through the narrow feasible corridor that best traded goal reduction against cost and constraint pressure.
+
+PRACTICAL USE
+- recover why a team repeatedly chooses the same action order
+- distinguish real resource constraints from inherited habit
+- redesign workflows by targeting the actual bottleneck instead of the visible endpoint
+
+==================================================
+CORPUS-LEVEL DISTILLATION
+==================================================
+
+Shared kernel
+When the visible artifact is only the endpoint of a bounded search, the real hidden structure lies in the feasible manifold, the evaluator geometry, and the active constraints that selected the survivor path.
+
+KERNEL STATEMENT
+Do not read the finished object as self-explanatory.
+Recover the constrained search that made it survive.
+
+WHAT THIS EXEMPLAR PRESERVES
+- the constrained-search skeleton
+- the active-bottleneck lens
+- the subgoal and pruning interpretation
+- the reduced survivor-path reading
+
+WHAT THIS EXEMPLAR DOES NOT PRESERVE
+- any specific proof system as canon
+- any specific organization or laboratory workflow as canon
+- one-off notation or domain jargon
+- narrative detail that does not sharpen the reusable rule
+
+LOCAL VERDICT
+Strong exemplar.
+Keep as a local knowledge file and transfer-test before master-canon promotion.

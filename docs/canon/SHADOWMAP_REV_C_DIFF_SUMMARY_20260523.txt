@@ -1,0 +1,34 @@
+SHADOWMAP REV_C DIFF SUMMARY
+DATE: 2026-05-23
+
+Base files:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321.txt
+
+Generated replacement files:
+- SHADOWMAP_MASTER_CANON_20260321_REV_C.txt
+- SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321_REV_C.txt
+
+Core merge:
+TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION
+
+Added to master canon:
+1. Header provenance line for tensor-message transfer-validated knowledge files.
+2. Version updated from rev B to rev C.
+3. New canonized family:
+   H. TENSOR-MESSAGE / LOOP-RESIDUAL
+4. New corpus-derived extension:
+   8. TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION SUBRULE
+5. New canonized exemplar:
+   10. TENSOR-NETWORK / MESSAGE-PASSING COMPRESSION EXEMPLAR
+6. New kernel statement style:
+   The message fixed point is the first shadow; the loop residual is the shadow-of-the-shadow.
+7. New pseudocode branch for high-dimensional locally interacting graph cases.
+8. New final canonical tensor-message principle.
+
+Added to source map:
+1. Tensor-message / loop-residual compression source provenance.
+2. Explicit note that only the reusable graph/message/residual projection was merged.
+3. Explicit note that quantum/LEC/finance-specific constants and toy weights were not copied.
+
+No existing master canon file was overwritten.
