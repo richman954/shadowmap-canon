@@ -1,0 +1,247 @@
+[
+  {
+    "path": ".github/workflows/tests.yml",
+    "bytes": 442,
+    "sha256": "ce185886975791e66b85c48f728cece7d598b4e19b896a327ee01a4fc5d204de"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 257,
+    "sha256": "5ff5ac143a5f12b76c68321f34cd2594d755d873c2ca15d37252e4d80f2d027b"
+  },
+  {
+    "path": "LICENSE_PENDING.md",
+    "bytes": 283,
+    "sha256": "6cccc9e553d69ae3af9d53f495aaee4c30841a5102e2dcebfb4682c931dbfddb"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2149,
+    "sha256": "e1dfc509275724c7f3e5bc88e389acc7b509a41f8543e429685e42da379195a2"
+  },
+  {
+    "path": "data/results/SHADOWMAP_TENSOR_MESSAGE_TRANSFER_RESULTS_20260523.csv",
+    "bytes": 691,
+    "sha256": "1351573d4771401806e455b31cbfcb7b156abce6f64c8c66b3331b5b7141c072"
+  },
+  {
+    "path": "data/results/SHADOWMAP_TENSOR_MESSAGE_TRANSFER_RESULTS_20260523.json",
+    "bytes": 3646,
+    "sha256": "228e0840f18ff69e01e865d01cc7b1f2cbc660a15285036cfa3f4d2c9383d67e"
+  },
+  {
+    "path": "data/results/tensor_message_transfer_results.csv",
+    "bytes": 694,
+    "sha256": "8bc8b7d04b0ae2cd57ef840e67ddb1c69e39ecb2f4e08d2379d7e6a402fee259"
+  },
+  {
+    "path": "data/results/tensor_message_transfer_results.json",
+    "bytes": 3368,
+    "sha256": "e5cf46f1a2fdd96effb664f43d8ab375bd648ca96670aba09377deab7ffd50c4"
+  },
+  {
+    "path": "docs/canon/SHADOWMAP_CANON_PROMOTION_NOTE_TENSOR_MESSAGE_REV_C_20260523.txt",
+    "bytes": 1735,
+    "sha256": "490689b65f0c8818171c997a2f330af975cc4a49749f1cbda05e8462dd558aed"
+  },
+  {
+    "path": "docs/canon/SHADOWMAP_MASTER_CANON_20260321_REV_C.txt",
+    "bytes": 24211,
+    "sha256": "072f42f093e4e0b9d1ca9a8a2a8c55cb6e8b683263242f8ebd4c2637715fbbc7"
+  },
+  {
+    "path": "docs/canon/SHADOWMAP_MASTER_CANON_CURRENT.txt",
+    "bytes": 24211,
+    "sha256": "072f42f093e4e0b9d1ca9a8a2a8c55cb6e8b683263242f8ebd4c2637715fbbc7"
+  },
+  {
+    "path": "docs/canon/SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321_REV_C.txt",
+    "bytes": 2730,
+    "sha256": "b4eb4c1b38dee3ec23e1d12f1e00af00642238e26c69998413958c9b0a0545a3"
+  },
+  {
+    "path": "docs/canon/SHADOWMAP_MASTER_CANON_SOURCE_MAP_CURRENT.txt",
+    "bytes": 2730,
+    "sha256": "b4eb4c1b38dee3ec23e1d12f1e00af00642238e26c69998413958c9b0a0545a3"
+  },
+  {
+    "path": "docs/canon/SHADOWMAP_REV_C_DIFF_SUMMARY_20260523.txt",
+    "bytes": 1285,
+    "sha256": "80b8746a6a6d56b5e24034df883c797e4e53a9c297c02c813397daecf30eca2f"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_EXEMPLAR_EXPERT_EVALUATOR_FAILURE_TOPOLOGY_20260321.txt",
+    "bytes": 4312,
+    "sha256": "f2614babce5d8b524da282c89cbb37cb669629cf17d4d313193dc00ecc7af67d"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_EXEMPLAR_GENERATOR_EVALUATOR_SEARCH_20260321.txt",
+    "bytes": 2652,
+    "sha256": "dcd0a3236e1a1ba0452ad40ebbef62371fffd87ea21b9bdb920a89d7c6726f3a"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_EXEMPLAR_SEARCH_UNDER_CONSTRAINT_20260408.txt",
+    "bytes": 4819,
+    "sha256": "9926a38ebbdb0eb69b27f430c6b602acc740cecdd66e727f7e107ffa4ab2bb2d"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_EXEMPLAR_TENSOR_NETWORK_QUANTUM_DYNAMICS_20260523.txt",
+    "bytes": 3758,
+    "sha256": "7e98b6d786457bae5d7573b294f123c46a333e16db0264a67ccfa006ba29c853"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_EXEMPLAR_TESSELLATION_REFLECTION_KERNELS_20260321.txt",
+    "bytes": 4170,
+    "sha256": "0d03cec3c7c9098e040eb25ff3e44dd5fb6200aa1e48055f32b6c1770e2af20c"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_TRANSFER_TEST_TENSOR_MESSAGE_ELDMR_20260523.txt",
+    "bytes": 3410,
+    "sha256": "8b3f947ab7babc7b3b3c6a325b5f841a6938013adb15e45aad9d5a5e0d47a01f"
+  },
+  {
+    "path": "docs/exemplars/SHADOWMAP_TRANSFER_TEST_TENSOR_MESSAGE_KERNEL_SURVIVOR_20260523.txt",
+    "bytes": 3404,
+    "sha256": "bbbd9b5c3cb475d4572c75049f954a332bba88b9b5e76984c1ee92e7563d39a3"
+  },
+  {
+    "path": "docs/patches/SHADOWMAP_CANON_HOLD_CURATED_CORPUS_EVALUATOR_GEOMETRY_20260321.txt",
+    "bytes": 2464,
+    "sha256": "37f78c98ef99511b1897f4d7ebf7d1adc200e708dd0cf871c8e3e85aa2b2d9a1"
+  },
+  {
+    "path": "docs/patches/SHADOWMAP_CANON_HOLD_TENSOR_MESSAGE_PASSING_20260523.txt",
+    "bytes": 2866,
+    "sha256": "2c59f8c7767509c82c25c592618ef70830e8b53018bb6adc08b4af299252ff22"
+  },
+  {
+    "path": "docs/patches/SHADOWMAP_CANON_PATCH_GENERATOR_EVALUATOR_SEARCH_20260321.txt",
+    "bytes": 1449,
+    "sha256": "a141b5be32e25b6d51679ff4d6779b70027ce4da8e65ab1be8d72c7408ecf662"
+  },
+  {
+    "path": "docs/patches/SHADOWMAP_CANON_PATCH_GEOREFLECT_FINITE_CELL_20260321.txt",
+    "bytes": 1401,
+    "sha256": "9c3feed4a139d581b9a9f093d637e6624847513b0c338cd4f9042e03d69b2f7a"
+  },
+  {
+    "path": "docs/patches/SHADOWMAP_CANON_PATCH_SEARCH_UNDER_CONSTRAINT_20260408.txt",
+    "bytes": 3652,
+    "sha256": "61a47db88b21c9a939503d0df839417985651f5da7b0e98034d74f1b85289dea"
+  },
+  {
+    "path": "docs/patches/SHADOWMAP_CANON_PATCH_TENSOR_MESSAGE_COMPRESSION_TRANSFER_TESTED_20260523.txt",
+    "bytes": 3809,
+    "sha256": "43ab04350f1d8e16b0fcc329ff37fea451be775204d53804d210f39098e372ec"
+  },
+  {
+    "path": "docs/source_notes.md",
+    "bytes": 958,
+    "sha256": "6126f2222afadabfa667af085c6241f4b5358342e11c830da15cbc2f4ff20b1e"
+  },
+  {
+    "path": "docs/submodules/SHADOWMAP_SUBMODULE_CURATED_CORPUS_EVALUATOR_GEOMETRY_FAILURE_TOPOLOGY_20260321.txt",
+    "bytes": 5407,
+    "sha256": "c74dc6bc52a0365e65f0df65ea7e8710b3b0205492ac314a21883ff31ebef73a"
+  },
+  {
+    "path": "docs/submodules/SHADOWMAP_SUBMODULE_GENERATOR_EVALUATOR_SEARCH_20260321.txt",
+    "bytes": 5188,
+    "sha256": "1e4d4a497684b68a41c2338bf7f7357c9820e3973ddcee01d5952714cfc9dc07"
+  },
+  {
+    "path": "docs/submodules/SHADOWMAP_SUBMODULE_GEOREFLECT_FINITE_CELL_20260321.txt",
+    "bytes": 4240,
+    "sha256": "dc186cbb545713fe00dc9a14a90d50dbc6975fae8f3e90527847b725242676d8"
+  },
+  {
+    "path": "docs/submodules/SHADOWMAP_SUBMODULE_SEARCH_UNDER_CONSTRAINT_20260408.txt",
+    "bytes": 7507,
+    "sha256": "03518a6dd9ca669bd42611a2182906adef51374565ecc8565a68e9a061bd87b4"
+  },
+  {
+    "path": "docs/submodules/SHADOWMAP_SUBMODULE_TENSOR_MESSAGE_PASSING_COMPRESSION_20260523.txt",
+    "bytes": 7643,
+    "sha256": "b0d696e1b4c18e418c28a3ac421c88131ec6f4b1b0a95761e0e540746ec52613"
+  },
+  {
+    "path": "docs/update_actions/SHADOWMAP_UPDATE_ACTIONS_20260321.txt",
+    "bytes": 1440,
+    "sha256": "b545c6d53d008784ad0aec5830bb58ed123e15b3704fdf45d4ea43f739875a36"
+  },
+  {
+    "path": "docs/update_actions/SHADOWMAP_UPDATE_ACTIONS_EXPERT_EVALUATOR_TOPOLOGY_20260321.txt",
+    "bytes": 1837,
+    "sha256": "39f54bde5047ae4b53e7f84d0ad81def201045bd114ec12218bca1122c8f6d25"
+  },
+  {
+    "path": "docs/update_actions/SHADOWMAP_UPDATE_ACTIONS_TENSOR_MESSAGE_CANON_MERGE_REV_C_20260523.txt",
+    "bytes": 2056,
+    "sha256": "95884a9f300b8e871dcf650f233ca1d751249b6a78bc1d63e9d7c12f67382dea"
+  },
+  {
+    "path": "docs/update_actions/SHADOWMAP_UPDATE_ACTIONS_TENSOR_MESSAGE_COMPRESSION_TRANSFER_TESTED_20260523.txt",
+    "bytes": 1714,
+    "sha256": "7bf9a0fec976d2bf57799cdf7c77a143e7e4c6cb37255d184f41d635753b85f9"
+  },
+  {
+    "path": "docs/update_actions/SHADOWMAP_UPDATE_ACTIONS_TENSOR_MESSAGE_PASSING_20260523.txt",
+    "bytes": 1424,
+    "sha256": "020171c73965679d0998a47735af3f3fbcf07e84af1ebe85834cd32abdd03342"
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 404,
+    "sha256": "f74e987778128196173d7abc8267b2a90ad0297c19cce58934e4647e430626f4"
+  },
+  {
+    "path": "repo_manifest.json",
+    "bytes": 7755,
+    "sha256": "8e0581d5ea2d87d108f72c6ba1dec24d5671efc0e648f796c07560b6ce16ad5b"
+  },
+  {
+    "path": "scripts/run_transfer_tests.py",
+    "bytes": 2085,
+    "sha256": "6e60124e3f233f2e01b356eb11dc48bbeecb97186962f6f45828d9f2e7e3727a"
+  },
+  {
+    "path": "src/shadowmap/__init__.py",
+    "bytes": 398,
+    "sha256": "8603146c451c97b7031e05e630cf259d5449a1314c5ad471036583ab638bda9d"
+  },
+  {
+    "path": "src/shadowmap/__pycache__/__init__.cpython-313.pyc",
+    "bytes": 527,
+    "sha256": "35e889177f025a49e888b9a090c6565e72621d73950b9eb268663811c069e4b9"
+  },
+  {
+    "path": "src/shadowmap/__pycache__/examples.cpython-313.pyc",
+    "bytes": 5813,
+    "sha256": "01ddfb5832648ad3893d592d8469283a881ed65423e885928f1d30a3f03aa410"
+  },
+  {
+    "path": "src/shadowmap/__pycache__/factor_graph.cpython-313.pyc",
+    "bytes": 16303,
+    "sha256": "2f53d11fbfba3de23dc50830714449c136a42599caa83730e85c5abc91a249ce"
+  },
+  {
+    "path": "src/shadowmap/examples.py",
+    "bytes": 4982,
+    "sha256": "66ff6da9dea7d67f93c19dd58a7119785efbdc59726cec52425f282e7b621748"
+  },
+  {
+    "path": "src/shadowmap/factor_graph.py",
+    "bytes": 10544,
+    "sha256": "97e2aeb33b6a4ebd17fbce0d617c905edc67e617f0594d9ab00e48c3fa23470d"
+  },
+  {
+    "path": "tests/__pycache__/test_factor_graph.cpython-313.pyc",
+    "bytes": 3154,
+    "sha256": "8cec26135e1cd1dc38d510c52f5bc609d75f62b92213133f042896351446c9a2"
+  },
+  {
+    "path": "tests/test_factor_graph.py",
+    "bytes": 1467,
+    "sha256": "6537cf1f048fff850221453accb107c118cbd0da872556be05970301db37dc0a"
+  }
+]
