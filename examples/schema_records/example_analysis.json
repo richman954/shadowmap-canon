@@ -1,0 +1,15 @@
+{
+  "object": "ELDMR System",
+  "primary_representation": "factor_graph",
+  "explicit_claim": "The model reduces the complexity.",
+  "data_model_code_support": "Empirical runtime.",
+  "shadow_operator": "Bethe approximation",
+  "shadow_space": "Messages",
+  "hidden_structure": "Loop residual",
+  "invariant": "Total probability",
+  "governing_math": "Message passing",
+  "practical_use": "Prediction",
+  "verdict": "Valid under constraint",
+  "next_best_move": "Analyze failure topology",
+  "confidence": "High"
+}

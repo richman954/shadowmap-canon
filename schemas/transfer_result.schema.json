@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ShadowMap Transfer Result Record",
+  "description": "Schema for a ShadowMap transfer test result record.",
+  "type": "object",
+  "properties": {
+    "case": { "type": "string" },
+    "node_count": { "type": "integer" },
+    "factor_count": { "type": "integer" },
+    "exact_logZ": { "type": "number" },
+    "bp_bethe_logZ": { "type": "number" },
+    "K_loop_logZ": { "type": "number" },
+    "mean_var_L1": { "type": "number" },
+    "max_var_L1": { "type": "number" },
+    "bp_iters": { "type": "integer" },
+    "bp_max_delta": { "type": "number" },
+    "top_factor_residuals": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          { "type": "string" },
+          { "type": "number" }
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "exact_high_probabilities": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": { "type": "number" }
+      }
+    },
+    "bp_high_probabilities": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": { "type": "number" }
+      }
+    },
+    "interpretation": { "type": "string" }
+  },
+  "required": [
+    "case",
+    "node_count",
+    "factor_count",
+    "exact_logZ",
+    "bp_bethe_logZ",
+    "K_loop_logZ",
+    "mean_var_L1",
+    "max_var_L1",
+    "bp_iters",
+    "bp_max_delta",
+    "top_factor_residuals",
+    "exact_high_probabilities",
+    "bp_high_probabilities",
+    "interpretation"
+  ],
+  "additionalProperties": false
+}

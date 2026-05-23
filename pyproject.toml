@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Canonical ShadowMap notes and tensor-message transfer-test utilities."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.23"]
+dependencies = ["numpy>=1.23", "jsonschema>=4.17.3"]
 authors = [{name = "ShadowMap Canon Maintainers"}]
 
 [tool.setuptools.packages.find]

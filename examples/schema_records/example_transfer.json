@@ -1,0 +1,53 @@
+{
+  "case": "ELDMR_pair_kinetic_factor_graph",
+  "node_count": 7,
+  "factor_count": 9,
+  "exact_logZ": 7.193876541306083,
+  "bp_bethe_logZ": 7.177173630292073,
+  "K_loop_logZ": 0.016702911014010446,
+  "mean_var_L1": 0.02422249201319157,
+  "max_var_L1": 0.0311800789924553,
+  "bp_iters": 37,
+  "bp_max_delta": 8.139280915919755e-11,
+  "top_factor_residuals": [
+    [
+      "low_field_stabilizes_singlet:E->S",
+      0.033898577190436596
+    ],
+    [
+      "ELDMR_hysteresis_feedback:ELDMR->q",
+      0.03145430677978808
+    ],
+    [
+      "singlet_drives_ELDMR:S->ELDMR",
+      0.03118007897007908
+    ],
+    [
+      "Tmix_supports_singlet:Tmix->S",
+      0.03118007896001364
+    ],
+    [
+      "singlet_drives_EL:S->EL",
+      0.031180078952786877
+    ]
+  ],
+  "exact_high_probabilities": {
+    "q_memory_high": 0.9320558556102813,
+    "E_eff_low": 0.9446364778767751,
+    "S_pair_stable": 0.9522985188711541,
+    "T_mixing_suppressed": 0.8185687143772202,
+    "EL_high": 0.8435963102971257,
+    "ELDMR_high": 0.9319160904390862,
+    "MEL_high": 0.8607399219560798
+  },
+  "bp_high_probabilities": {
+    "q_memory_high": 0.9456898264876201,
+    "E_eff_low": 0.9599878273742289,
+    "S_pair_stable": 0.9678885583673817,
+    "T_mixing_suppressed": 0.8266541220009854,
+    "EL_high": 0.8521902456490897,
+    "ELDMR_high": 0.9457377691015013,
+    "MEL_high": 0.8704422624930855
+  },
+  "interpretation": "Loop residual localizes on q_memory -> E_eff -> S_pair -> ELDMR feedback and MEL/Tmix branches."
+}

@@ -71,6 +71,10 @@ git branch -M main
 git push -u origin main
 ```
 
+## Schemas
+
+JSON schemas are available in the `schemas/` directory to formally define the expected shape of ShadowMap analysis records (`schemas/shadowmap_analysis.schema.json`) and transfer-test result records (`schemas/transfer_result.schema.json`). See `examples/schema_records/` for example records. These schemas exist to ensure downstream automated tools produce correctly formatted structural knowledge.
+
 ## Notes
 
 This scaffold does not include the large research PDF/ZIP/XLSX corpus. It preserves derived canon artifacts and runnable small-graph transfer tests. Add source artifacts later only under an explicit license and storage policy.

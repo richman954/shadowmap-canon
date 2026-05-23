@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ShadowMap Analysis Record",
+  "description": "Schema for a ShadowMap analysis record.",
+  "type": "object",
+  "properties": {
+    "object": { "type": "string" },
+    "primary_representation": { "type": "string" },
+    "explicit_claim": { "type": "string" },
+    "data_model_code_support": { "type": "string" },
+    "shadow_operator": { "type": "string" },
+    "shadow_space": { "type": "string" },
+    "hidden_structure": { "type": "string" },
+    "invariant": { "type": "string" },
+    "governing_math": { "type": "string" },
+    "practical_use": { "type": "string" },
+    "verdict": { "type": "string" },
+    "next_best_move": { "type": "string" },
+    "confidence": { "type": "string" }
+  },
+  "required": [
+    "object",
+    "primary_representation",
+    "explicit_claim",
+    "data_model_code_support",
+    "shadow_operator",
+    "shadow_space",
+    "hidden_structure",
+    "invariant",
+    "governing_math",
+    "practical_use",
+    "verdict",
+    "next_best_move",
+    "confidence"
+  ],
+  "additionalProperties": false
+}
