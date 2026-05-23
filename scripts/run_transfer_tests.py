@@ -26,7 +26,7 @@ def main() -> None:
         "top_factor_1", "top_factor_1_L1", "top_factor_2", "top_factor_2_L1",
     ]
     with csv_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator='\n')
         writer.writeheader()
         for case in cases:
             top = case["top_factor_residuals"]
