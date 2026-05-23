@@ -18,3 +18,5 @@ jobs:
         run: python -m unittest discover -s tests
       - name: Run transfer test script
         run: python scripts/run_transfer_tests.py
+      - name: Verify generated transfer outputs are current
+        run: git diff --exit-code data/results

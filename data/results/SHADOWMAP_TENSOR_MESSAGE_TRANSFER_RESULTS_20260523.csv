@@ -1,3 +1,0 @@
-case,node_count,factor_count,exact_logZ,bp_bethe_logZ,K_loop_logZ,mean_var_L1,max_var_L1,bp_iters,bp_max_delta,top_factor_1,top_factor_1_L1,top_factor_2,top_factor_2_L1
-ELDMR_pair_kinetic_factor_graph,7,9,7.193876541306083,7.177173630292073,0.016702911014010446,0.02422249201319157,0.0311800789924553,37,8.139280915919755e-11,low_field_stabilizes_singlet:E->S,0.033898577190436596,ELDMR_hysteresis_feedback:ELDMR->q,0.03145430677978808
-Kernel_Survivor_financial_fragility_factor_graph,8,11,7.1451902221196075,7.041153623352271,0.10403659876733684,0.11630178638500413,0.18483262595911673,50,9.911504950110839e-11,debt_drives_kernel,0.19201488861461874,kernel_drives_victim,0.1877019946054176
