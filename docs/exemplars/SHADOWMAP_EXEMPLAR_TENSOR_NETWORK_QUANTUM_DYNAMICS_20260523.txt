@@ -1,0 +1,92 @@
+SHADOWMAP EXEMPLAR NOTE: TENSOR NETWORK / MESSAGE-PASSING QUANTUM DYNAMICS
+DATE: 2026-05-23
+STATUS: DERIVED EXEMPLAR NOTE
+FAMILY: TENSOR / MESSAGE-PASSING COMPRESSION
+PARENT SUBMODULE: SHADOWMAP_SUBMODULE_TENSOR_MESSAGE_PASSING_COMPRESSION_20260523.txt
+SOURCE BASIS:
+- 2503.05693v3.pdf
+- User-provided tensor-network infographic images
+
+PURPOSE
+This note preserves the tensor-network quantum-dynamics case as a worked ShadowMap exemplar.
+The goal is not to restate the quantum-computing result, but to extract the reusable ShadowMap kernel: geometry-matched local compression, message propagation, and loop-residual correction.
+
+OBJECT
+Disordered quantum spin-glass dynamics on two- and three-dimensional lattices.
+
+PRIMARY REPRESENTATION
+A many-body quantum wavefunction under a time-dependent Hamiltonian. In native form this object is high-dimensional and hard to simulate directly.
+
+EXPLICIT CLAIM
+The paper argues that lattice-specific tensor networks, evolved with belief-propagation simple update and measured with corrected message-passing methods, can simulate quantum annealing dynamics efficiently and accurately on classical computers.
+
+WHAT THE DATA / MODEL / EQUATIONS ACTUALLY SHOW
+The operational pipeline is:
+1. encode the wavefunction in a tensor network matching the lattice geometry
+2. time evolve with BP-based simple update
+3. optionally truncate with BP
+4. measure observables using loop corrections or MPS message passing
+5. compare two-point correlators and scaling behavior
+
+The important ShadowMap point is not merely that the simulation works, but that the global object is replaced by a local graph of messages plus controlled residual corrections.
+
+SHADOW OPERATOR
+Lattice-matched tensorization plus message passing.
+
+SHADOW SPACE
+- tensor network geometry
+- local tensors
+- edge messages
+- BP fixed point
+- loop-corrected contractions
+- MPS boundary messages on planar/cylindrical structures
+
+HIDDEN STRUCTURE RECOVERED
+The high-dimensional wavefunction becomes legible through local compatibility messages and through the loop terms that local BP misses.
+
+INVARIANT OR LOW-DIMENSIONAL SUMMARY
+message fixed point + loop residual
+
+or:
+wavefunction -> geometry-matched tensor network -> BP messages -> loop-corrected observables
+
+GOVERNING MATH
+Factor contraction:
+Z = sum_{x_e} prod_v T_v(x_{partial v})
+
+BP update:
+m_{u->v}(x_uv) proportional_to sum_{x_{partial u \ v}} T_u(x_{partial u}) prod_{w neq v} m_{w->u}(x_wu)
+
+Loop residual:
+K_loop = |log Z_corrected - log Z_BP|
+
+Observable residual:
+K_loop(O) = |O_corrected - O_BP|
+
+PRACTICAL USE
+This exemplar upgrades ShadowMap by making hidden structure computational:
+- build a factor graph instead of only a verbal interpretation
+- use message passing for the cheap first shadow
+- use loop residuals as kernel-energy targets
+- spend expensive analysis only where residuals are high
+
+SHADOWMAP VERDICT
+Strong ShadowMap exemplar.
+The paper supplies an explicit secondary representation whose message fixed points and residual corrections make a previously opaque high-dimensional object operationally tractable.
+
+WHAT THIS EXEMPLAR PRESERVES
+- geometry-matched compression
+- cheap local evolution / expensive corrected measurement split
+- message fixed points as first-order shadow
+- loop corrections as shadow-of-shadow
+- residual hot-spot logic
+
+WHAT THIS EXEMPLAR DOES NOT PRESERVE
+- paper-specific lattice choices as canon law
+- paper-specific bond dimensions as canon law
+- quantum-advantage debate as canon law
+- visual metaphor without factor-graph construction
+
+DISTILLED KERNEL
+The wavefunction is not the deepest object for ShadowMap purposes.
+The usable object is the geometry-matched message network, and the hidden structure is concentrated in the loop residuals.

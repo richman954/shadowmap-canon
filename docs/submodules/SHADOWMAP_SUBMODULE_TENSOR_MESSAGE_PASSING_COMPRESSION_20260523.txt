@@ -1,0 +1,161 @@
+SHADOWMAP SUBMODULE: TENSOR / MESSAGE-PASSING COMPRESSION
+DATE: 2026-05-23
+STATUS: DERIVED LOCAL SUBMODULE
+FAMILY: CROSS-FAMILY COMPUTATIONAL PROJECTION
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- 2503.05693v3.pdf
+- User-provided tensor-network infographic images
+
+PURPOSE
+This file canonizes a reusable local ShadowMap procedure for systems whose native description is high-dimensional, loopy, or globally opaque, but whose structure can be represented as a graph of local factors, messages, and loop corrections.
+
+KERNEL STATEMENT
+The object is not the deepest variable.
+The message network plus loop residual is.
+
+TRIGGER CONDITIONS
+Use this submodule when all or most of the following hold:
+1. The object contains many locally interacting parts.
+2. The primary representation is too high-dimensional to reason about directly.
+3. A graph of local variables, mechanisms, claims, components, or constraints can be built.
+4. Local compatibility tables, evidence tables, rate tables, or transition kernels can be assigned.
+5. First-pass local propagation is informative but incomplete.
+6. Remaining hidden structure appears in loops, feedback, long-range dependence, contradiction, or residual coupling.
+
+PRIMARY REPRESENTATION
+A paper, device, experiment, material, workflow, model, dataset, institution, theorem proof, or physical system described as a flat narrative, diagram, equation set, or data table.
+
+SHADOW OPERATOR
+Tensorize the object into a graph:
+- nodes = local variables, components, mechanisms, claims, experiments, layers, or constraints
+- edges = causal, informational, energetic, temporal, geometric, logical, or evidential coupling
+- tensors/factors = local compatibility, transition, rate, or evidence tables
+Then run message passing and compute residual/loop corrections.
+
+SHADOW SPACE
+Not the raw object alone, but:
+- the factor/tensor graph G
+- the local tensors T_v
+- the edge messages m_{u->v}
+- message fixed points
+- loop residuals / correction terms
+- observables projected from the graph
+
+CORE SPLIT
+The method separates into two layers:
+1. local message layer: what the system implies if local neighborhoods are enough
+2. loop-residual layer: what remains hidden because local propagation misses feedback, cycles, or long-range dependence
+
+The second layer is the ShadowMap kernel-energy analog for graphs.
+
+STANDARD FORM
+ShadowMap_TN(O) = (G, {T_v}, {m_{u->v}}, K_loop, O_obs)
+
+where:
+G = graph of the object
+T_v = local tensor/factor/table at node v
+m_{u->v} = message from u to v
+K_loop = loop residual / correction energy
+O_obs = measured observables or claims
+
+GOVERNING MATH
+Factor contraction:
+Z(O) = sum_{x_e} prod_{v in V} T_v(x_{partial v})
+
+Belief-propagation update:
+m_{u->v}(x_uv) proportional_to
+sum_{x_{partial u \ v}} T_u(x_{partial u}) prod_{w in N(u)\v} m_{w->u}(x_wu)
+
+Message fixed point:
+m* = BP(T, G)
+
+First-pass observable:
+y_BP = O(G, T, m*)
+
+Loop residual:
+K_loop = | log Z_corrected - log Z_BP |
+
+or, for observable channels:
+K_loop(O_i) = | O_corrected_i - O_BP_i |
+
+COMPRESSION RULE
+object -> tensor/factor graph -> message fixed point -> loop residual -> hidden invariant
+
+KERNEL ASSEMBLY RULE
+1. Identify the native object and its primary opacity.
+2. Build a graph whose topology matches the real coupling structure, not a convenient flat list.
+3. Assign each node a local tensor/factor table.
+4. Run local message passing to obtain the first shadow.
+5. Compute observables from the message fixed point.
+6. Identify loops or residuals where local messages fail.
+7. Rank those loop residuals as hidden-structure hot spots.
+8. Compress the graph into its stable message fields and high-residual loops.
+9. Use the resulting kernel to guide prediction, experiment, design, or next analysis.
+
+STANDARD SHADOWMAP FORM (LOCAL VERSION)
+1. Object: high-dimensional interacting system
+2. Primary representation: narrative, diagram, equation set, raw data, or flat table
+3. Explicit claim: what the source says is happening
+4. What the model/data actually show: local interactions, measurable channels, graph topology
+5. Shadow operator: tensor/factor graph construction plus message passing
+6. Shadow space: messages, fixed points, boundary tensors, loop corrections
+7. Hidden structure recovered: coupling topology, feedback loops, bottlenecks, contradiction loops, long-range dependency
+8. Invariant recovered: message fixed point plus loop-residual energy
+9. Governing math: factor contraction, belief propagation, loop-corrected contraction, observable projection
+10. Practical use: find what local explanation misses and where expensive analysis should be spent
+11. Verdict: strong when graph topology matches the object and loop residuals are predictive or diagnostic
+12. Next best move: test transfer on a second non-quantum domain
+
+CONTROL PARAMETERS
+- graph topology G
+- tensor rank / factor dimensionality
+- message dimension
+- iteration tolerance
+- truncation threshold
+- loop-correction depth l_max
+- observable set
+- residual threshold for kernel hot spots
+
+OBSERVABLE SIGNATURES
+- local messages converge but predictions remain biased
+- high residual on cycles, feedback paths, or repeated dependency loops
+- stable message fixed point across noisy inputs
+- sharp bottlenecks where many messages concentrate
+- observable mismatch explained by a small number of loop corrections
+
+PRACTICAL USES
+1. Papers: claims, equations, figures, and datasets become nodes; loop residuals expose circular support or hidden contradiction.
+2. Devices: layers and intermediate states become nodes; loop residuals expose hysteresis, field memory, or bottleneck recombination.
+3. Materials/coatings: components and process stages become nodes; loop residuals expose hidden failure mechanisms.
+4. Finance/strategy: features and stress channels become nodes; loop residuals expose coupled fragility not seen in linear scores.
+5. Workflows: steps and constraints become nodes; loop residuals expose feedback bottlenecks.
+
+LIMITS
+- Weak if graph topology is arbitrary or only decorative.
+- Weak if local tensors cannot be meaningfully assigned.
+- Weak if loop residuals are not measurable, interpretable, or testable.
+- Do not confuse tensor-network metaphor with a valid tensor/factor construction.
+- Do not canonize paper-specific bond dimensions, lattices, or hyperparameters as ShadowMap law.
+
+CURRENT EXEMPLARS UNDER THIS SUBMODULE
+1. Quantum spin-glass tensor-network simulation with BP evolution and loop-corrected / MPS message-passing measurement.
+2. Candidate future transfer test: ELDMR hidden pair-kinetic network represented as a factor graph.
+3. Candidate future transfer test: Kernel/Survivor Map as a feature-factor graph with loop residuals over stress channels.
+
+RELATION TO EXISTING CANON
+This submodule extends:
+- projection-residual / kernel-energy: loop residual becomes graph-level kernel energy
+- channel-projection: visible observables are projected channels of hidden message flow
+- field / solver: graph topology acts as a discrete field scaffold
+- kinetic / spin / reaction-network: hidden populations become factor-graph nodes
+- generator/evaluator: message passing can prioritize which regions deserve deeper evaluation
+
+DISTILLED KERNEL
+When a system is high-dimensional, do not only project it.
+Tensorize it.
+Use BP messages as the first shadow, and loop corrections as the shadow-of-the-shadow.
+
+PROMOTION RULE
+Do not merge this rule into the master canon yet.
+Promote only if transfer across at least one additional non-quantum domain shows that message fixed points and loop residuals yield a durable reusable kernel rather than only a persuasive analogy.

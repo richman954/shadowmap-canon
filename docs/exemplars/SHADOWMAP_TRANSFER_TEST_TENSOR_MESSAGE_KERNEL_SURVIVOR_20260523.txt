@@ -1,0 +1,94 @@
+SHADOWMAP TRANSFER TEST: TENSOR-MESSAGE / LOOP-RESIDUAL ON KERNEL/SURVIVOR MAP
+DATE: 2026-05-23
+STATUS: TRANSFER TEST PASSED STRUCTURALLY
+FAMILY: TENSOR-MESSAGE / RESIDUAL / FINANCIAL-FRAGILITY GRAPH
+SOURCE BASIS:
+- SHADOWMAP_SUBMODULE_TENSOR_MESSAGE_COMPRESSION_20260523.txt
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- Plan Kernel Survivor Map Systematic Discret.txt
+- SHADOWMAP_TENSOR_MESSAGE_PASSING_TRANSFER_TESTS.py
+- SHADOWMAP_TENSOR_MESSAGE_TRANSFER_RESULTS_20260523.json
+
+PURPOSE
+Test whether the tensor-message / loop-residual kernel survives outside quantum dynamics and outside kinetic spin systems by applying it to the Kernel/Survivor Map.
+
+OBJECT
+Kernel/Survivor financial-fragility pipeline.
+
+PRIMARY REPRESENTATION
+Flat feature matrix and derived scalar scores:
+- SurvivorScore
+- KernelEnergy
+- VictimScore
+
+OPACITY
+A flat score can hide coupled fragility. Debt acceleration, funding stress, market sensitivity, and survival features are not independent axes; they form loops that can change victim ranking under stress.
+
+SHADOW OPERATOR
+Convert the feature/score map into a discrete factor graph.
+
+GRAPH USED IN THE TRANSFER TEST
+Variables:
+- debt_accel_high
+- fcf_stable
+- interest_cover_high
+- funding_stress_high
+- market_crash_sensitive
+- kernel_energy_high
+- survivor_score_high
+- victim_score_high
+
+Factors:
+- prior_funding_regime
+- prior_debt_acceleration
+- fcf_supports_survivor
+- interest_cover_supports_survivor
+- debt_drives_kernel
+- funding_x_market_drives_kernel
+- kernel_drives_victim
+- debt_drives_victim
+- survivor_victim_tension
+- funding_degrades_fcf
+- debt_market_stress_loop
+
+WHAT THE TEST ACTUALLY DID
+The script ran sum-product belief propagation on the loopy binary factor graph, computed exact enumeration, computed Bethe logZ, then treated |logZ_exact - logZ_Bethe| and factor-belief disagreement as graph-level KernelEnergy.
+
+RESULTS
+- nodes: 8
+- factors: 11
+- exact logZ: 7.145190
+- BP / Bethe logZ: 7.041154
+- K_loop_logZ: 0.104037
+- mean variable L1 residual: 0.116302
+- max variable L1 residual: 0.184833
+- BP iterations: 50
+
+DOMINANT LOOP-RESIDUAL FACTORS
+- debt_drives_kernel: L1=0.192015
+- kernel_drives_victim: L1=0.187702
+- debt_drives_victim: L1=0.186973
+- funding_x_market_drives_kernel: L1=0.184833
+- debt_market_stress_loop: L1=0.170350
+
+INTERPRETATION
+The largest residual terms land on the core fragility chain:
+
+debt_accel_high -> kernel_energy_high -> victim_score_high
+
+This means the graph-level residual is not generic noise. It recovers the exact structural claim of the Kernel/Survivor Map: hidden fragility lives in residual coupling after the survivorship projection.
+
+RECOVERED INVARIANT
+message fixed point over survivorship, leverage, funding stress, and victim score plus high-residual debt/kernel/victim loop.
+
+LOW-DIMENSIONAL KERNEL
+debt acceleration and funding stress create coupled residual energy; victim score is the visible projection of that graph-level kernel.
+
+VERDICT
+Strong transfer. The tensor-message kernel converts flat KernelEnergy into graph-level residual energy and identifies the bottleneck factors that deserve deeper audit.
+
+LIMIT
+This is a structural transfer test with hand-built factors. It does not replace a fitted financial model or backtest.
+
+NEXT BEST MOVE
+Fit factor tables from actual cross-sectional feature data, then compare graph-level KernelEnergy against the existing projection/PCA KernelEnergy.

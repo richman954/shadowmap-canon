@@ -1,0 +1,119 @@
+SHADOWMAP SUBMODULE: CURATED-CORPUS / EVALUATOR-GEOMETRY / FAILURE-TOPOLOGY
+DATE: 2026-03-21
+STATUS: DERIVED LOCAL SUBMODULE
+FAMILY: CROSS-FAMILY REUSABLE SUBRULE
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- guo-et-al-2026-expert-evaluation-of-llm-world-models-a-high-tc-superconductivity-case-study.pdf
+- pnas.2533676123.sapp.pdf
+- high_tc_failure_topology_map.xlsx
+- high_tc_failure_topology_map.csv
+
+PURPOSE
+This file canonizes a local ShadowMap procedure for expert-evaluated benchmarks where the raw model answer is less informative than the evaluator-shaped failure surface.
+
+KERNEL STATEMENT
+The answer is not the deepest object; the evaluator-induced failure topology is.
+
+TRIGGER CONDITIONS
+Use this submodule when all or most of the following hold:
+1. The corpus is finite, curated, or at least bounded enough that source control matters.
+2. Questions are written by domain experts or are otherwise technically demanding.
+3. Answers are graded by a rubric with question-level resolution.
+4. Evaluator comments expose recurring error families rather than only scalar scores.
+5. The main design question is not merely who wins the benchmark, but why answers fail.
+6. Failure modes can be mapped to operational design levers such as corpus control, retrieval depth, temporal judgment, or visual reasoning.
+
+PRIMARY REPRESENTATION
+Raw model answers, aggregate benchmark means, and headline win/loss comparisons.
+
+SHADOW OPERATOR
+Project each answer into evaluator geometry and then classify the induced failure surface by recurrent failure family.
+
+SHADOW SPACE
+Not the raw answer alone, but:
+- the constrained corpus
+- the retrieval and generation pipeline
+- the evaluator rubric
+- the question-level comments
+- the induced failure-topology map
+
+CORE SPLIT
+The method separates into two coupled layers:
+- visible answer quality
+- hidden epistemic pipeline quality
+
+The second layer is the real control surface.
+
+STANDARD FAILURE FAMILIES
+This current local version uses four recurrent classes:
+1. source_noise
+   Wrong, weak, unqualified, or irrelevant provenance.
+2. retrieval_miss
+   Needed evidence exists but the system fails to surface the conceptually relevant material.
+3. temporal_context
+   The system does not correctly position evidence in the literature timeline or conflict structure.
+4. figure_reasoning
+   The system may retrieve images, but does not extract quantitative or structural meaning from them.
+
+KERNEL ASSEMBLY RULE
+1. Identify the benchmark object and its expert question set.
+2. Extract the rubric axes and any evaluator comments.
+3. Ignore mean scores at first and inspect question-level evaluator evidence.
+4. Partition recurring failures into a small stable class set.
+5. Build a question-by-question failure-topology map.
+6. Separate direct-support assignments from inference-weighted assignments.
+7. Interpret the map as an image of the hidden epistemic pipeline.
+8. Use the dominant failure families to define the next system-improvement target.
+
+COMPRESSION RULE
+benchmark -> evaluator geometry -> failure topology -> design target
+
+STANDARD SHADOWMAP FORM (LOCAL VERSION)
+1. Object: expert benchmark or expert-assistant evaluation
+2. Primary representation: raw answers and scalar rubric means
+3. Opacity: score averages hide heterogeneous failure mechanisms
+4. Shadow operator: evaluator projection plus failure-family classification
+5. Shadow space: rubric axes, comments, question-level map
+6. Hidden structure recovered: epistemic pipeline quality and its dominant failure families
+7. Invariant recovered: stable low-cardinality failure topology
+8. Governing math: question-to-failure map q -> F(q), optionally with confidence labels
+9. Practical use: directs the next design step more sharply than aggregate leaderboard scores
+10. Verdict: strong when the induced topology is stable enough to guide intervention
+11. Next best move: test recurrence on a second domain
+
+REUSABLE PROCEDURE
+INPUT:
+- benchmark B
+- question set Q
+- rubric R
+- evaluator comments C
+- optional source metadata S
+
+ALGORITHM:
+1. For each question q in Q, gather rubric scores and evaluator comments.
+2. Infer the minimum stable failure class that best explains the observed deficiency.
+3. Mark whether the assignment is directly supported by evaluator text or inference-weighted.
+4. Construct a map F(q) = dominant failure, plus optional secondary failure and confidence label.
+5. Collapse the full benchmark into the induced topology over failure classes.
+6. Use that topology to identify which design lever should be changed first.
+
+OUTPUTS
+- question-level failure-topology map
+- dominant and secondary failure classes
+- confidence labels
+- a design-level kernel stating which failure family dominates the benchmark
+
+LIMITS
+- Weak if evaluator comments are absent and all labels are inference-weighted.
+- Weak if the rubric is too coarse to distinguish failure families.
+- Weak if source provenance is unavailable.
+- Be cautious about over-reading low-comment regions of the map.
+
+CURRENT EXEMPLAR UNDER THIS SUBMODULE
+1. High-Tc superconductivity expert benchmark for LLM assistants
+
+PROMOTION RULE
+Do not merge this rule into the master canon yet.
+Promote only if the same evaluator-topology pattern recurs in another expert domain or proves clearly durable beyond this benchmark.
+Do not canonize benchmark-specific model names, paper-specific examples, or question IDs.

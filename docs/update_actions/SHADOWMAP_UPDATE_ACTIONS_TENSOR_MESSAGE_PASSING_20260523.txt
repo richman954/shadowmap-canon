@@ -1,0 +1,35 @@
+SHADOWMAP UPDATE ACTIONS: TENSOR / MESSAGE-PASSING COMPRESSION
+DATE: 2026-05-23
+
+Recommended path
+1. Upload these files into the project as supporting knowledge files:
+   - SHADOWMAP_SUBMODULE_TENSOR_MESSAGE_PASSING_COMPRESSION_20260523.txt
+   - SHADOWMAP_EXEMPLAR_TENSOR_NETWORK_QUANTUM_DYNAMICS_20260523.txt
+   - SHADOWMAP_CANON_HOLD_TENSOR_MESSAGE_PASSING_20260523.txt
+
+2. Do NOT replace:
+   - SHADOWMAP_MASTER_CANON_20260321.txt
+   - SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321.txt
+
+3. Do NOT change project instructions yet.
+
+Why this is the recommended path
+- The kernel is operational and worth preserving.
+- It aligns with existing canon rules but is not yet transfer-tested across a second non-quantum domain.
+- The correct status is local submodule + exemplar + canon-hold decision.
+
+What this upload set is for
+- The submodule preserves the reusable procedure.
+- The exemplar preserves the tensor-network quantum-dynamics case.
+- The hold note prevents premature master-canon merge.
+
+Best next move after upload
+Run the tensor/message-passing projection on one additional domain:
+- ELDMR hidden pair-kinetic system
+- Kernel/Survivor Map stress graph
+- expert-evaluator failure topology graph
+
+If the same message-fixed-point / loop-residual kernel recurs, then generate:
+- SHADOWMAP_CANON_PATCH_TENSOR_MESSAGE_PASSING_COMPRESSION_YYYYMMDD.txt
+- revised source-map note
+- updated action file for replacement upload

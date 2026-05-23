@@ -1,0 +1,64 @@
+SHADOWMAP CANON HOLD NOTE: CURATED-CORPUS / EVALUATOR-GEOMETRY / FAILURE-TOPOLOGY
+DATE: 2026-03-21
+STATUS: DO NOT MERGE INTO MASTER CANON YET
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- SHADOWMAP_EXEMPLAR_EXPERT_EVALUATOR_FAILURE_TOPOLOGY_20260321.txt
+- SHADOWMAP_SUBMODULE_CURATED_CORPUS_EVALUATOR_GEOMETRY_FAILURE_TOPOLOGY_20260321.txt
+- high_tc_failure_topology_map.xlsx
+- high_tc_failure_topology_map.csv
+
+PURPOSE
+Record the canon decision for the expert-evaluator failure-topology kernel derived from the high-Tc benchmark.
+
+DECISION
+Hold as:
+- one worked exemplar
+- one local submodule
+Do not patch the master canon or source map yet.
+
+WHY THE HOLD IS CORRECT
+The current kernel is strong and operational:
+- it sharpens the general method
+- it exposes a real hidden variable
+- it produces a usable design rule
+
+But the master canon promotion rule is stricter:
+a new branch or subrule should be promoted only when it recurs across domains or is clearly durable beyond a one-off benchmark.
+
+CURRENT ASSESSMENT AGAINST THE FUTURE CANONIZATION RULE
+1. Appears in more than one domain or is clearly structurally reusable:
+   promising, but not yet demonstrated across a second domain
+2. Sharpens the general method:
+   yes
+3. Contributes a durable pattern rather than a one-off detail:
+   likely, but not yet proven by transfer
+
+RESULT
+Hold locally.
+The correct current status is:
+- exemplar: yes
+- local submodule: yes
+- master-canon patch: no
+
+WHAT COULD BE PROMOTED LATER
+Potential future reusable rule:
+When an expert benchmark offers question-level evaluation, treat the evaluator-induced failure surface as the operational shadow representation and use its stable failure classes as the real design target.
+
+WHAT MUST NOT BE PROMOTED
+- the high-Tc paper's benchmark tables
+- model-specific rankings
+- vendor names
+- paper-specific prompt text
+- domain-specific scientific claims
+
+RELEASE CONDITION FROM HOLD
+Promote only after a second expert domain shows the same or closely analogous structure:
+- curated or bounded corpus pressure
+- evaluator geometry revealing more than mean scores
+- stable low-cardinality failure classes
+- actionable design split between source control, retrieval depth, temporal judgment, and figure reasoning
+
+NEXT TEST
+Run the same procedure on one more expert benchmark or expert-reviewed corpus and compare the induced topology.
+If the topology recurs, prepare a compact canon patch and corresponding source-map note.

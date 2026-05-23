@@ -1,0 +1,35 @@
+SHADOWMAP_UPDATE_ACTIONS_20260321.txt
+
+Explicit actions for The User
+
+Recommended path
+1. Download these updated replacement files:
+   - SHADOWMAP_MASTER_CANON_20260321_REV_A.txt
+   - SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321_REV_A.txt
+
+2. On your machine, rename them to:
+   - SHADOWMAP_MASTER_CANON_20260321.txt
+   - SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321.txt
+
+3. Re-upload those two renamed files into the project as replacements for the current canon pair.
+
+4. Keep the supporting knowledge files in the project:
+   - SHADOWMAP_SUBMODULE_GEOREFLECT_FINITE_CELL_20260321.txt
+   - SHADOWMAP_EXEMPLAR_TESSELLATION_REFLECTION_KERNELS_20260321.txt
+   - SHADOWMAP_KNOWLEDGE_REGISTRY_20260321.txt
+   - SHADOWMAP_CANON_PATCH_GEOREFLECT_FINITE_CELL_20260321.txt
+
+Why this is the recommended path
+- the current project instructions already name the canonical files explicitly
+- keeping the same filenames means the project instructions do NOT need to change
+
+Alternative path
+If you upload the revised canon files under their REV_A names instead of renaming them first, then update the project instructions so the authority rule names:
+- SHADOWMAP_MASTER_CANON_20260321_REV_A.txt
+and the source-map rule names:
+- SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321_REV_A.txt
+
+What does NOT need updating
+- the behavioral ShadowMap method instructions
+- the project name
+- the source-map role as provenance/support note rather than the governing file

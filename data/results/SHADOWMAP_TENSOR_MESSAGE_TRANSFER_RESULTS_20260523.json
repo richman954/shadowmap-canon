@@ -1,0 +1,110 @@
+[
+  {
+    "case": "ELDMR_pair_kinetic_factor_graph",
+    "node_count": 7,
+    "factor_count": 9,
+    "exact_logZ": 7.193876541306083,
+    "bp_bethe_logZ": 7.177173630292073,
+    "K_loop_logZ": 0.016702911014010446,
+    "mean_var_L1": 0.02422249201319157,
+    "max_var_L1": 0.0311800789924553,
+    "bp_iters": 37,
+    "bp_max_delta": 8.139280915919755e-11,
+    "top_factor_residuals": [
+      [
+        "low_field_stabilizes_singlet:E->S",
+        0.033898577190436596
+      ],
+      [
+        "ELDMR_hysteresis_feedback:ELDMR->q",
+        0.03145430677978808
+      ],
+      [
+        "singlet_drives_ELDMR:S->ELDMR",
+        0.03118007897007908
+      ],
+      [
+        "Tmix_supports_singlet:Tmix->S",
+        0.03118007896001364
+      ],
+      [
+        "singlet_drives_EL:S->EL",
+        0.031180078952786877
+      ]
+    ],
+    "exact_high_probabilities": {
+      "q_memory_high": 0.9320558556102813,
+      "E_eff_low": 0.9446364778767751,
+      "S_pair_stable": 0.9522985188711541,
+      "T_mixing_suppressed": 0.8185687143772202,
+      "EL_high": 0.8435963102971257,
+      "ELDMR_high": 0.9319160904390862,
+      "MEL_high": 0.8607399219560798
+    },
+    "bp_high_probabilities": {
+      "q_memory_high": 0.9456898264876201,
+      "E_eff_low": 0.9599878273742289,
+      "S_pair_stable": 0.9678885583673817,
+      "T_mixing_suppressed": 0.8266541220009854,
+      "EL_high": 0.8521902456490897,
+      "ELDMR_high": 0.9457377691015013,
+      "MEL_high": 0.8704422624930855
+    },
+    "interpretation": "Loop residual localizes on the q_memory -> E_eff -> S_pair -> ELDMR feedback cycle and on the MEL/Tmix branch; this tests whether the hidden-memory/channel-projection kernel can be represented as message flow plus residual loops."
+  },
+  {
+    "case": "Kernel_Survivor_financial_fragility_factor_graph",
+    "node_count": 8,
+    "factor_count": 11,
+    "exact_logZ": 7.1451902221196075,
+    "bp_bethe_logZ": 7.041153623352271,
+    "K_loop_logZ": 0.10403659876733684,
+    "mean_var_L1": 0.11630178638500413,
+    "max_var_L1": 0.18483262595911673,
+    "bp_iters": 50,
+    "bp_max_delta": 9.911504950110839e-11,
+    "top_factor_residuals": [
+      [
+        "debt_drives_kernel",
+        0.19201488861461874
+      ],
+      [
+        "kernel_drives_victim",
+        0.1877019946054176
+      ],
+      [
+        "debt_drives_victim",
+        0.1869729809155147
+      ],
+      [
+        "funding_x_market_drives_kernel",
+        0.18483262591399152
+      ],
+      [
+        "debt_market_stress_loop",
+        0.1703501995577681
+      ]
+    ],
+    "exact_high_probabilities": {
+      "debt_accel_high": 0.8344768335563796,
+      "fcf_stable": 0.43274054263031153,
+      "interest_cover_high": 0.4771697288483969,
+      "funding_stress_high": 0.60672808815027,
+      "market_crash_sensitive": 0.7955849786153175,
+      "kernel_energy_high": 0.8690120062857185,
+      "survivor_score_high": 0.47296110216319887,
+      "victim_score_high": 0.8504461672276584
+    },
+    "bp_high_probabilities": {
+      "debt_accel_high": 0.9196519333718008,
+      "fcf_stable": 0.39519292469647144,
+      "interest_cover_high": 0.4523934034448757,
+      "funding_stress_high": 0.6461356826958679,
+      "market_crash_sensitive": 0.8520571928968824,
+      "kernel_energy_high": 0.9614283192652768,
+      "survivor_score_high": 0.4285477604524567,
+      "victim_score_high": 0.9354448060974289
+    },
+    "interpretation": "Loop residual localizes on coupled debt/funding/market/kernel/victim paths and on survivor-victim tension; this tests whether projection-residual KernelEnergy can be represented as graph-level residual energy rather than only a flat score."
+  }
+]

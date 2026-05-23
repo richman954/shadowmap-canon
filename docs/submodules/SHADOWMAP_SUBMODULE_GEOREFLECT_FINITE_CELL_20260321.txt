@@ -1,0 +1,99 @@
+SHADOWMAP SUBMODULE: GEOREFLECT-FINITE-CELL
+DATE: 2026-03-21
+STATUS: DERIVED LOCAL SUBMODULE
+FAMILY: GEOMETRIC / REFLECTIVE
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- Full article_ Beauty in_of mathematics_ tessellations and their formulas.pdf
+
+PURPOSE
+This file canonizes a reusable local ShadowMap procedure for planar domains bounded by finitely many lines and/or circles where the PDE kernel is opaque in the native cell picture but becomes explicit after reflection-orbit construction.
+
+KERNEL STATEMENT
+The geometric cell is not the deepest object; it generates a reflection orbit.
+The orbit carries the PDE kernel.
+
+TRIGGER CONDITIONS
+Use this submodule when all or most of the following hold:
+1. The object is a planar domain or cell bounded by finitely many generalized circles (lines and circles).
+2. The native geometric picture shows the cell but not the operational kernel.
+3. Reflection across the boundaries generates a finite parqueting or a finitely compressible orbit.
+4. The target quantity is a Schwarz, Green, Neumann, or related boundary-value kernel.
+
+PRIMARY REPRESENTATION
+A single planar cell / tile / wedge / lens / circular polygon.
+
+SHADOW OPERATOR
+Repeated reflection at boundary lines and circles.
+- One reflection acts inversively.
+- Two reflections compose to a Mobius transformation.
+
+SHADOW SPACE
+Not the original cell alone, but:
+- the orbit of reflected cells, and
+- the orbit of a point under the reflection generators.
+
+CORE SPLIT
+The trace of a point generally separates into two classes:
+- Mobius-image class
+- Inversive-image class
+These classes contribute differently to the compressed kernel product.
+
+KERNEL ASSEMBLY RULE
+For finite parqueting / finite reflected-cell cases:
+1. Generate the reflected trace of z.
+2. Compress that orbit into a product P(z,zeta) for Green-type kernels or Q(z,zeta) for Neumann-type kernels.
+3. Evaluate:
+   G(z,zeta) = log |P(z,zeta)|^2
+   N(z,zeta) = -log |Q(z,zeta)|^2
+
+COMPRESSION RULE
+The visible geometry is compressed to:
+cell -> reflection orbit -> orbit product -> kernel
+
+STANDARD SHADOWMAP FORM (LOCAL VERSION)
+1. Object: finite reflected circular-polygon cell
+2. Primary representation: one visible cell
+3. Opacity: kernel not legible in the native cell picture
+4. Shadow operator: repeated reflections at lines/circles
+5. Shadow space: orbit of reflected cells + point trace orbit
+6. Hidden structure recovered: image algebra organizing poles, zeros, boundary cancellation
+7. Invariant recovered: compressed orbit product P or Q
+8. Governing math: inversive geometry, Mobius transformations, meromorphic products, conformal/inversive invariance
+9. Practical use: explicit construction of Green / Neumann / related kernels
+10. Verdict: strong when orbit closes finitely or compresses cleanly
+11. Next best move: instantiate on a new geometry and test closure/compression
+
+REUSABLE PROCEDURE
+INPUT:
+- Domain D bounded by finitely many lines/circles
+- Interior points z, zeta
+- Boundary-value kernel target (Green or Neumann)
+
+ALGORITHM:
+1. Encode each boundary piece as a generalized circle.
+2. Build the reflection generators.
+3. Generate the reflected orbit of the cell.
+4. Generate the reflected trace orbit of z.
+5. Separate direct/Mobius-type versus inversive-type images when needed.
+6. Assemble the compressed orbit product P or Q.
+7. Evaluate G or N from the log-magnitude rule.
+8. Transport the result across equivalent reflected cells by symmetry.
+9. If the orbit is infinite, test convergence before canonizing the result.
+
+OUTPUTS
+- Explicit kernel formula when finite closure occurs
+- Reflection-orbit representation when closed form is not yet compressed
+- Low-dimensional kernel statement for future reuse
+
+LIMITS
+- Strongest in finite parqueting / finitely compressible cases
+- Infinite parqueting requires convergence analysis
+- Do not over-assign exact factor-to-image provenance unless the source explicitly tracks it
+
+CURRENT EXEMPLARS UNDER THIS SUBMODULE
+1. Circle sector D_alpha
+2. Almaty-apple representative finite cell D_2
+
+PROMOTION RULE
+Do not fold this submodule into the master canon as a new canon-level branch until at least one additional nontrivial geometry confirms the same procedure and compression rule.

@@ -1,0 +1,103 @@
+SHADOWMAP SUBMODULE: GENERATOR-SPACE / EVALUATOR-LANDSCAPE
+DATE: 2026-03-21
+STATUS: DERIVED LOCAL SUBMODULE
+FAMILY: CROSS-FAMILY REUSABLE SUBRULE
+SOURCE BASIS:
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- s41586-023-06924-6.pdf
+- 41586_2023_6924_MOESM1_ESM.pdf
+- 2406.04824v2.pdf
+
+PURPOSE
+This file canonizes a reusable local ShadowMap procedure for hard-solve / easy-evaluate settings where the native object is combinatorially opaque but concise generators, heuristics, policies, or acquisition rules can be scored directly.
+
+KERNEL STATEMENT
+The target object is not the deepest search variable; it is generated.
+The evaluator-shaped generator manifold carries the operational structure.
+
+TRIGGER CONDITIONS
+Use this submodule when all or most of the following hold:
+1. The native object or direct solution space is too large, brittle, or opaque for direct search.
+2. A concise generator, policy, heuristic, or subfunction can be represented explicitly.
+3. Candidate generators can be evaluated or rolled out against a score functional.
+4. The search procedure retains, ranks, or clusters candidate generators rather than only raw outputs.
+5. The discovered generators are short or structured enough to inspect.
+6. Inspection can reveal a reduced symmetry, rule, or restricted search space.
+
+PRIMARY REPRESENTATION
+A raw combinatorial object, optimization outcome, target solution, or direct policy objective.
+
+SHADOW OPERATOR
+Move from object space to generator space and score candidate generators with an evaluator E[g].
+When relevant, cluster or rank generators by score signature or rollout behavior.
+
+SHADOW SPACE
+Not the raw object alone, but:
+- the constrained generator family
+- the evaluator-defined fitness landscape
+- the retained population or database of generators
+
+CORE SPLIT
+The method separates into two coupled layers:
+- generator proposals
+- evaluator geometry
+The evaluator geometry is the real constraint surface; the raw object is only its image.
+
+KERNEL ASSEMBLY RULE
+1. Fix a concise generator family or algorithm skeleton g_theta.
+2. Define an evaluator or rollout score E[g_theta] on tasks, instances, or trajectories of interest.
+3. Search generator space under E while preserving enough diversity to avoid premature collapse.
+4. Retain high-scoring correct generators.
+5. Inspect surviving generators for compressed rules, symmetries, or reusable structural motifs.
+6. If a reduced rule emerges, re-enter the search in that reduced space.
+
+COMPRESSION RULE
+raw object -> generator family -> evaluator landscape -> retained generators -> reduced rule / new prior
+
+STANDARD SHADOWMAP FORM (LOCAL VERSION)
+1. Object: hard-solve / easy-evaluate object class
+2. Primary representation: raw target object or direct optimization formulation
+3. Opacity: direct search is too large, brittle, or not structurally informative
+4. Shadow operator: generator search under evaluator pressure
+5. Shadow space: generator manifold plus evaluator-defined fitness landscape
+6. Hidden structure recovered: compressed rule, symmetry, or policy manifold visible only after generator-level search
+7. Invariant recovered: evaluator-induced score signature and the reduced generator rule
+8. Governing math: constrained search over generators under a score functional E[g], possibly on full rollouts
+9. Practical use: discover deployable heuristics, acquisition rules, constructions, or restricted search priors
+10. Verdict: strong when generator inspection yields a reusable reduced rule beyond raw benchmark improvement
+11. Next best move: formalize the reduced rule and test transfer in another domain
+
+REUSABLE PROCEDURE
+INPUT:
+- native object class O
+- generator skeleton or family g_theta
+- evaluator or rollout score E[g_theta]
+- optional diversity / memory mechanism
+
+ALGORITHM:
+1. Identify the direct object that is hard to search.
+2. Isolate the concise generator family that produces candidate objects or policies.
+3. Define the evaluator that scores generator behavior on relevant tasks.
+4. Search the generator family under the evaluator.
+5. Preserve diverse high-scoring generators long enough to expose structural alternatives.
+6. Inspect the survivors for compressed rules or symmetries.
+7. Promote only the reduced rule, not implementation trivia, into future search.
+
+OUTPUTS
+- A compact generator or policy that performs well under the evaluator
+- A score signature or rollout profile that identifies why it works
+- A reduced rule or symmetry class that sharpens the next search
+
+LIMITS
+- Weak if the evaluator does not match the real objective.
+- Weak if the generator is uninterpretable and reveals no reduced structure.
+- Weak if the result is only benchmark lift without a reusable rule or transfer pattern.
+- Be cautious when computational cost of evaluation dominates the method.
+
+CURRENT EXEMPLARS UNDER THIS SUBMODULE
+1. FunSearch: code search over constructive heuristics and priority functions
+2. FunBO: code search over acquisition functions evaluated by full BO rollouts
+
+PROMOTION RULE
+Promote this submodule into the master canon only as a reusable search rule.
+Do not canonize paper-specific prompts, hyperparameters, model vendors, or benchmark tables.

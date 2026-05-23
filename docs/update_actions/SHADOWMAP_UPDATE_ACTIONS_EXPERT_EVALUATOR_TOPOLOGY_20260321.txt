@@ -1,0 +1,52 @@
+SHADOWMAP_UPDATE_ACTIONS_EXPERT_EVALUATOR_TOPOLOGY_20260321.txt
+
+Explicit actions for The User
+
+Recommended path
+1. Download these files:
+   - high_tc_failure_topology_map.xlsx
+   - high_tc_failure_topology_map.csv
+   - SHADOWMAP_EXEMPLAR_EXPERT_EVALUATOR_FAILURE_TOPOLOGY_20260321.txt
+   - SHADOWMAP_SUBMODULE_CURATED_CORPUS_EVALUATOR_GEOMETRY_FAILURE_TOPOLOGY_20260321.txt
+   - SHADOWMAP_CANON_HOLD_CURATED_CORPUS_EVALUATOR_GEOMETRY_20260321.txt
+
+2. Upload those five files into the project as supporting knowledge files.
+
+3. Do NOT replace:
+   - SHADOWMAP_MASTER_CANON_20260321.txt
+   - SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321.txt
+
+4. Do NOT change the project instructions yet.
+
+5. Treat this cluster as:
+   - one worked exemplar
+   - one local reusable submodule
+   - one explicit canon-hold decision
+
+Why this is the recommended path
+- The kernel is operational and worth preserving.
+- The current evidence is still one benchmark domain.
+- The master canon promotion rule requires recurrence across domains or clearly durable reuse before promotion.
+
+What the upload set is for
+- The workbook and CSV preserve the question-level topology.
+- The exemplar note preserves the distilled case.
+- The submodule note preserves the reusable method.
+- The hold note prevents premature canon merge.
+
+What does NOT need updating
+- project name
+- current master canon filename
+- current source-map filename
+- project instructions
+
+Best next move after upload
+Run the same evaluator-topology procedure on one more expert-domain benchmark or expert-reviewed corpus.
+If the same stable failure classes recur, then generate:
+- a compact canon patch
+- a revised source-map note
+- an updated action file for replacement upload
+
+Suggested bundle logic
+If you want one-click handling, use:
+- SHADOWMAP_EXPERT_EVALUATOR_TOPOLOGY_BUNDLE_20260321.zip

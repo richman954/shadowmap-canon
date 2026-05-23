@@ -1,0 +1,89 @@
+SHADOWMAP TRANSFER TEST: TENSOR-MESSAGE / LOOP-RESIDUAL ON ELDMR PAIR-KINETIC MODEL
+DATE: 2026-05-23
+STATUS: TRANSFER TEST PASSED STRUCTURALLY
+FAMILY: TENSOR-MESSAGE / KINETIC / HIDDEN-MEMORY
+SOURCE BASIS:
+- SHADOWMAP_SUBMODULE_TENSOR_MESSAGE_COMPRESSION_20260523.txt
+- SHADOWMAP_MASTER_CANON_20260321.txt
+- SHADOWMAP_03142026.txt, ELDMR kinetic-model thread
+- SHADOWMAP_TENSOR_MESSAGE_PASSING_TRANSFER_TESTS.py
+- SHADOWMAP_TENSOR_MESSAGE_TRANSFER_RESULTS_20260523.json
+
+PURPOSE
+Test whether the tensor-message / loop-residual kernel survives outside the original quantum tensor-network paper by applying it to the ELDMR hidden pair-kinetic model.
+
+OBJECT
+Operando LEC / ELDMR spin-kinetic system with ionic memory.
+
+PRIMARY REPRESENTATION
+Voltage sweep, optical emission, ELDMR, and MEL channels described as observed curves.
+
+OPACITY
+The visible channels are projections of a hidden spin/ion network. The primary voltage coordinate is not the true state variable. It modulates effective internal field through retained ionic memory.
+
+SHADOW OPERATOR
+Convert the kinetic explanation into a discrete factor graph.
+
+GRAPH USED IN THE TRANSFER TEST
+Variables:
+- q_memory_high
+- E_eff_low
+- S_pair_stable
+- T_mixing_suppressed
+- EL_high
+- ELDMR_high
+- MEL_high
+
+Factors:
+- prior_q_reverse_condition
+- memory_shields_field:q->E
+- low_field_stabilizes_singlet:E->S
+- singlet_drives_EL:S->EL
+- singlet_drives_ELDMR:S->ELDMR
+- low_field_drives_MEL:E->MEL
+- ELDMR_hysteresis_feedback:ELDMR->q
+- MEL_spin_loop:MEL<->Tmix
+- Tmix_supports_singlet:Tmix->S
+
+WHAT THE TEST ACTUALLY DID
+The script ran sum-product belief propagation on the loopy binary factor graph, computed exact enumeration, computed Bethe logZ, then treated |logZ_exact - logZ_Bethe| and factor-belief disagreement as loop-residual energy.
+
+RESULTS
+- nodes: 7
+- factors: 9
+- exact logZ: 7.193877
+- BP / Bethe logZ: 7.177174
+- K_loop_logZ: 0.016703
+- mean variable L1 residual: 0.024222
+- max variable L1 residual: 0.031180
+- BP iterations: 37
+
+DOMINANT LOOP-RESIDUAL FACTORS
+- low_field_stabilizes_singlet:E->S: L1=0.033899
+- ELDMR_hysteresis_feedback:ELDMR->q: L1=0.031454
+- singlet_drives_ELDMR:S->ELDMR: L1=0.031180
+- Tmix_supports_singlet:Tmix->S: L1=0.031180
+- singlet_drives_EL:S->EL: L1=0.031180
+
+INTERPRETATION
+The largest residual terms do not appear on the visible emission endpoint first. They appear on the hidden field-to-singlet and hysteretic feedback links:
+
+E_eff_low -> S_pair_stable
+ELDMR_high -> q_memory_high
+
+This is exactly the intended ShadowMap behavior: the observed ELDMR channel is not the deepest object; it is a projection of a hidden memory-conditioned pair-state graph.
+
+RECOVERED INVARIANT
+stable message field + loop residual on q/E/S/ELDMR feedback.
+
+LOW-DIMENSIONAL KERNEL
+q_memory -> E_eff -> S_pair -> ELDMR, with ELDMR feeding inverse evidence back onto q_memory.
+
+VERDICT
+Strong transfer. The tensor-message kernel is not merely a quantum-tensor-network metaphor here. It produces a graph-level diagnostic of the hidden-memory / channel-projection structure already present in the ELDMR model.
+
+LIMIT
+This is a structural transfer test with a reduced discrete factor graph. It is not a calibrated fit to raw ELDMR experimental data.
+
+NEXT BEST MOVE
+If raw sweep data are available, replace the hand-built factor tables with fitted likelihood factors and compute residual loops directly from experimental channels.

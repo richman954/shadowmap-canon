@@ -1,0 +1,94 @@
+SHADOWMAP CANON PATCH: TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION, TRANSFER-TESTED
+DATE: 2026-05-23
+STATUS: PROPOSED CANON PATCH / TRANSFER TEST PASSED / USER MAY PROMOTE AFTER REVIEW
+
+PURPOSE
+Record that the tensor-message / loop-residual compression rule has now passed structural transfer tests on two non-quantum ShadowMap targets:
+1. ELDMR spin/ion pair-kinetic model
+2. Kernel/Survivor financial-fragility graph
+
+WHAT WAS TESTED
+The prior local submodule proposed:
+object -> geometry-matched tensor graph -> message fixed point -> loop residual -> hidden invariant
+
+The transfer tests instantiated that pattern as small loopy factor graphs and compared:
+- exact enumeration
+- BP / Bethe approximation
+- variable-marginal disagreement
+- high-residual factor locations
+
+TRANSFER TEST RESULTS
+A. ELDMR pair-kinetic graph
+- K_loop_logZ: 0.016703
+- mean variable L1 residual: 0.024222
+- dominant residual factors:
+- low_field_stabilizes_singlet:E->S: L1=0.033899
+- ELDMR_hysteresis_feedback:ELDMR->q: L1=0.031454
+- singlet_drives_ELDMR:S->ELDMR: L1=0.031180
+- Tmix_supports_singlet:Tmix->S: L1=0.031180
+- singlet_drives_EL:S->EL: L1=0.031180
+
+B. Kernel/Survivor graph
+- K_loop_logZ: 0.104037
+- mean variable L1 residual: 0.116302
+- dominant residual factors:
+- debt_drives_kernel: L1=0.192015
+- kernel_drives_victim: L1=0.187702
+- debt_drives_victim: L1=0.186973
+- funding_x_market_drives_kernel: L1=0.184833
+- debt_market_stress_loop: L1=0.170350
+
+CANONIZATION ASSESSMENT
+The master canon's future-canonization rule requires that a new branch or subrule:
+1. appear in more than one domain or be clearly structurally reusable
+2. sharpen the general method
+3. contribute a durable pattern rather than a one-off detail
+
+This candidate now satisfies the structural-reuse test across:
+- quantum tensor-network dynamics
+- operando kinetic spin/ion memory
+- financial fragility / projection-residual scoring
+
+RECOMMENDED CANON ADDITION
+8. TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION SUBRULE
+When a high-dimensional object has many interacting parts, do not inspect only the flat object or only a scalar projection. Build a geometry-matched factor/tensor graph, assign local compatibility or transition factors, run message passing to recover the local fixed point, and treat loop residuals as graph-level kernel energy.
+
+Canonical pattern:
+object -> factor/tensor graph -> message fixed point -> loop residual -> hidden invariant
+
+Interpretation:
+The object is not the deepest variable; the message network plus loop residual is.
+The BP fixed point is the first shadow.
+The loop correction is the shadow-of-the-shadow.
+
+Useful outputs:
+- interaction graph
+- local factor/tensor tables
+- converged message set
+- approximate observable projection
+- loop-residual energy
+- high-residual bottleneck subgraphs
+
+WHAT SHOULD NOT BE CANONIZED
+- quantum paper-specific Hamiltonians or benchmark claims
+- bond dimensions or hyperparameters
+- hand-built transfer-test factor weights
+- any claim that BP is exact on all ShadowMap graphs
+- the visual tensor-network metaphor without a real graph/factor construction
+
+SOURCE-MAP NOTE TO ADD IF PROMOTED
+Distilled and promoted from post-merge derived knowledge files:
+- tensor-message / loop-residual compression, derived from the tensor-network quantum-dynamics paper and transfer-tested on ELDMR pair-kinetic and Kernel/Survivor factor-graph targets.
+
+Distilled but not copied verbatim:
+- paper-specific quantum dynamics details, experimental constants, bond dimensions, benchmark comparisons, and transfer-test toy weights.
+
+CURRENT RECOMMENDED ACTION
+Promote as a compact canon subrule only after user review. Until then, keep as:
+- local submodule
+- quantum exemplar
+- two transfer-test exemplars
+- proposed canon patch
+
+VERDICT
+Promotion-eligible, not automatically merged.

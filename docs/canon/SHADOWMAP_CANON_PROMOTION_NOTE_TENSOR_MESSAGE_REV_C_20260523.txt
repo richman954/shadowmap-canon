@@ -1,0 +1,35 @@
+SHADOWMAP CANON PROMOTION NOTE: TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION
+DATE: 2026-05-23
+STATUS: MERGED INTO REV_C REPLACEMENT CANON FILES
+
+PURPOSE
+Record the promotion of the tensor-message / loop-residual compression kernel from local transfer-validated submodule to compact master-canon subrule.
+
+PROMOTED KERNEL
+object -> factor/tensor graph -> message fixed point -> loop residual -> hidden invariant
+
+PROMOTION BASIS
+1. Quantum tensor-network dynamics exemplar:
+   Geometry-matched tensor network, BP/simple update, message passing, and loop-corrected measurement.
+2. LEC ELDMR spin/ion kinetic transfer test:
+   BP fixed point represented local kinetic explanation; loop residual exposed hidden memory/spin/field coupling.
+3. Kernel/Survivor financial-fragility transfer test:
+   BP fixed point represented local feature consistency; loop residual exposed graph-level KernelEnergy / contradiction energy.
+
+CANONIZATION DECISION
+Promote only the reusable graph/message/residual projection.
+Do not promote domain constants, toy weights, quantum hyperparameters, or claims of exactness for loopy BP.
+
+FILES GENERATED
+- SHADOWMAP_MASTER_CANON_20260321_REV_C.txt
+- SHADOWMAP_MASTER_CANON_SOURCE_MAP_20260321_REV_C.txt
+- SHADOWMAP_UPDATE_ACTIONS_TENSOR_MESSAGE_CANON_MERGE_REV_C_20260523.txt
+
+CHANGE SUMMARY
+REV_C adds:
+1. Canonized family H: TENSOR-MESSAGE / LOOP-RESIDUAL
+2. Corpus-derived extension 8: TENSOR-MESSAGE / LOOP-RESIDUAL COMPRESSION SUBRULE
+3. Canonized exemplar 10: TENSOR-NETWORK / MESSAGE-PASSING COMPRESSION EXEMPLAR
+4. Master pseudocode branch for high-dimensional locally interacting graph cases
+5. Final canonical tensor-message principle
+6. Source-map note documenting that only the reusable rule was merged
