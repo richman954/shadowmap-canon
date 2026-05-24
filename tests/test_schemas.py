@@ -62,7 +62,10 @@ class TestSchemas(unittest.TestCase):
         with open(example_path, "r", encoding="utf-8") as f:
             example = json.load(f)
 
-        # Test negative count
+        # Test zero or negative count
+        example["node_count"] = 0
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
         example["node_count"] = -1
         with self.assertRaises(ValidationError):
             validate(instance=example, schema=schema)

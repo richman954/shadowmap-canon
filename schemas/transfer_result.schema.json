@@ -5,8 +5,8 @@
   "type": "object",
   "properties": {
     "case": { "type": "string" },
-    "node_count": { "type": "integer", "minimum": 0 },
-    "factor_count": { "type": "integer", "minimum": 0 },
+    "node_count": { "type": "integer", "minimum": 1 },
+    "factor_count": { "type": "integer", "minimum": 1 },
     "exact_logZ": { "type": "number" },
     "bp_bethe_logZ": { "type": "number" },
     "K_loop_logZ": { "type": "number", "minimum": 0 },
