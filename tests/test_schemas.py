@@ -71,6 +71,16 @@ class TestSchemas(unittest.TestCase):
             validate(instance=example, schema=schema)
         example["node_count"] = 7
 
+        example["factor_count"] = 0
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+
+        example["factor_count"] = -1
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+
+        example["factor_count"] = 9
+
         # Test probability > 1
         example["exact_high_probabilities"]["q_memory_high"] = 1.5
         with self.assertRaises(ValidationError):
