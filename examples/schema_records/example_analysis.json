@@ -9,7 +9,7 @@
   "invariant": "Total probability",
   "governing_math": "Message passing",
   "practical_use": "Prediction",
-  "verdict": "Valid under constraint",
+  "verdict": "strong ShadowMap",
   "next_best_move": "Analyze failure topology",
-  "confidence": "High"
+  "confidence": "high"
 }

@@ -5,37 +5,38 @@
   "type": "object",
   "properties": {
     "case": { "type": "string" },
-    "node_count": { "type": "integer" },
-    "factor_count": { "type": "integer" },
+    "node_count": { "type": "integer", "minimum": 0 },
+    "factor_count": { "type": "integer", "minimum": 0 },
     "exact_logZ": { "type": "number" },
     "bp_bethe_logZ": { "type": "number" },
-    "K_loop_logZ": { "type": "number" },
-    "mean_var_L1": { "type": "number" },
-    "max_var_L1": { "type": "number" },
-    "bp_iters": { "type": "integer" },
-    "bp_max_delta": { "type": "number" },
+    "K_loop_logZ": { "type": "number", "minimum": 0 },
+    "mean_var_L1": { "type": "number", "minimum": 0 },
+    "max_var_L1": { "type": "number", "minimum": 0 },
+    "bp_iters": { "type": "integer", "minimum": 0 },
+    "bp_max_delta": { "type": "number", "minimum": 0 },
     "top_factor_residuals": {
       "type": "array",
       "items": {
         "type": "array",
         "prefixItems": [
           { "type": "string" },
-          { "type": "number" }
+          { "type": "number", "minimum": 0 }
         ],
         "minItems": 2,
         "maxItems": 2
-      }
+      },
+      "minItems": 1
     },
     "exact_high_probabilities": {
       "type": "object",
       "patternProperties": {
-        "^.*$": { "type": "number" }
+        "^.*$": { "type": "number", "minimum": 0, "maximum": 1 }
       }
     },
     "bp_high_probabilities": {
       "type": "object",
       "patternProperties": {
-        "^.*$": { "type": "number" }
+        "^.*$": { "type": "number", "minimum": 0, "maximum": 1 }
       }
     },
     "interpretation": { "type": "string" }

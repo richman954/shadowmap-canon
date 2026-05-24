@@ -14,9 +14,25 @@
     "invariant": { "type": "string" },
     "governing_math": { "type": "string" },
     "practical_use": { "type": "string" },
-    "verdict": { "type": "string" },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "strong ShadowMap",
+        "moderate ShadowMap",
+        "weak ShadowMap",
+        "analogical only",
+        "not worth ShadowMapping"
+      ]
+    },
     "next_best_move": { "type": "string" },
-    "confidence": { "type": "string" }
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    }
   },
   "required": [
     "object",
