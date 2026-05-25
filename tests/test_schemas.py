@@ -92,5 +92,57 @@ class TestSchemas(unittest.TestCase):
         with self.assertRaises(ValidationError):
             validate(instance=example, schema=schema)
 
+    def test_constrained_search_schema_valid(self):
+        schema_path = self.schemas_dir / "constrained_search.schema.json"
+        example_path = self.examples_dir / "example_constrained_search.json"
+
+        with open(schema_path, "r", encoding="utf-8") as f:
+            schema = json.load(f)
+
+        with open(example_path, "r", encoding="utf-8") as f:
+            example = json.load(f)
+
+        validate(instance=example, schema=schema)
+
+    def test_constrained_search_schema_invalid(self):
+        schema_path = self.schemas_dir / "constrained_search.schema.json"
+        example_path = self.examples_dir / "example_constrained_search.json"
+
+        with open(schema_path, "r", encoding="utf-8") as f:
+            schema = json.load(f)
+
+        with open(example_path, "r", encoding="utf-8") as f:
+            example = json.load(f)
+
+        example["iteration_limit"] = 0
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+
+    def test_formal_proof_schema_valid(self):
+        schema_path = self.schemas_dir / "formal_proof_result.schema.json"
+        example_path = self.examples_dir / "example_formal_proof.json"
+
+        with open(schema_path, "r", encoding="utf-8") as f:
+            schema = json.load(f)
+
+        with open(example_path, "r", encoding="utf-8") as f:
+            example = json.load(f)
+
+        validate(instance=example, schema=schema)
+
+    def test_formal_proof_schema_invalid(self):
+        schema_path = self.schemas_dir / "formal_proof_result.schema.json"
+        example_path = self.examples_dir / "example_formal_proof.json"
+
+        with open(schema_path, "r", encoding="utf-8") as f:
+            schema = json.load(f)
+
+        with open(example_path, "r", encoding="utf-8") as f:
+            example = json.load(f)
+
+        example["is_valid"] = "maybe"
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+
 if __name__ == "__main__":
     unittest.main()

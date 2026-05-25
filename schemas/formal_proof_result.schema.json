@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Formal Proof Result Record",
+  "description": "Schema for a formal proof result.",
+  "type": "object",
+  "properties": {
+    "problem_statement": { "type": "string" },
+    "survivor_proof": { "type": "string" },
+    "validator": { "type": "string" },
+    "is_valid": { "type": "boolean" }
+  },
+  "required": [
+    "problem_statement",
+    "survivor_proof",
+    "validator",
+    "is_valid"
+  ],
+  "additionalProperties": false
+}

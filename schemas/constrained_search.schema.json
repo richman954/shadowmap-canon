@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Constrained Search Record",
+  "description": "Schema for a constrained search record.",
+  "type": "object",
+  "properties": {
+    "problem_statement": { "type": "string" },
+    "formal_sketch": { "type": "string" },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "search_strategy": { "type": "string" },
+    "iteration_limit": { "type": "integer", "minimum": 1 }
+  },
+  "required": [
+    "problem_statement",
+    "formal_sketch",
+    "constraints",
+    "search_strategy",
+    "iteration_limit"
+  ],
+  "additionalProperties": false
+}

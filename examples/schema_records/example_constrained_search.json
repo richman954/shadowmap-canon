@@ -1,0 +1,10 @@
+{
+  "problem_statement": "Prove the infinite parqueting theorem.",
+  "formal_sketch": "Map to factor graph and use loopy BP.",
+  "constraints": [
+    "Use only polynomial time methods.",
+    "Resulting proof must be constructible."
+  ],
+  "search_strategy": "MCTS with constrained bounds.",
+  "iteration_limit": 1000
+}

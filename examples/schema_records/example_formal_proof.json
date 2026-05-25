@@ -1,0 +1,6 @@
+{
+  "problem_statement": "Prove the infinite parqueting theorem.",
+  "survivor_proof": "Proof is complete by...",
+  "validator": "Lean 4",
+  "is_valid": true
+}
