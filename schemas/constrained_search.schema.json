@@ -4,21 +4,64 @@
   "description": "Schema for a constrained search record.",
   "type": "object",
   "properties": {
-    "problem_statement": { "type": "string" },
-    "formal_sketch": { "type": "string" },
-    "constraints": {
+    "object": { "type": "string" },
+    "state_space": { "type": "string" },
+    "initial_state": { "type": "string" },
+    "goal_set": { "type": "string" },
+    "operators": {
       "type": "array",
       "items": { "type": "string" }
     },
-    "search_strategy": { "type": "string" },
-    "iteration_limit": { "type": "integer", "minimum": 1 }
+    "hard_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "soft_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "heuristic_policy": { "type": "string" },
+    "evaluator": { "type": "string" },
+    "active_bottlenecks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "surviving_trajectory": { "type": "string" },
+    "invariant": { "type": "string" },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "strong ShadowMap",
+        "moderate ShadowMap",
+        "weak ShadowMap",
+        "analogical only",
+        "not worth ShadowMapping"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    }
   },
   "required": [
-    "problem_statement",
-    "formal_sketch",
-    "constraints",
-    "search_strategy",
-    "iteration_limit"
+    "object",
+    "state_space",
+    "initial_state",
+    "goal_set",
+    "operators",
+    "hard_constraints",
+    "soft_constraints",
+    "heuristic_policy",
+    "evaluator",
+    "active_bottlenecks",
+    "surviving_trajectory",
+    "invariant",
+    "verdict",
+    "confidence"
   ],
   "additionalProperties": false
 }

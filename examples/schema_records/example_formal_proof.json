@@ -1,6 +1,9 @@
 {
-  "problem_statement": "Prove the infinite parqueting theorem.",
-  "survivor_proof": "Proof is complete by...",
+  "theorem_name": "Infinite parqueting",
+  "formal_statement": "forall (n: nat), exists (t: tiling n), valid t",
+  "proof_status": "not_checked",
+  "sorry_count": 0,
   "validator": "Lean 4",
-  "is_valid": true
+  "build_command": "lake build",
+  "shadowmap_interpretation": "Follows the spiral trajectory invariant."
 }

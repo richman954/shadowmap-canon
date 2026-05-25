@@ -114,7 +114,26 @@ class TestSchemas(unittest.TestCase):
         with open(example_path, "r", encoding="utf-8") as f:
             example = json.load(f)
 
-        example["iteration_limit"] = 0
+        # Missing required field
+        del example["object"]
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+        example["object"] = "Infinite parqueting"
+
+        # Unexpected extra field
+        example["unexpected_field"] = "value"
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+        del example["unexpected_field"]
+
+        # Invalid verdict
+        example["verdict"] = "invalid verdict"
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+        example["verdict"] = "moderate ShadowMap"
+
+        # Invalid confidence
+        example["confidence"] = "invalid confidence"
         with self.assertRaises(ValidationError):
             validate(instance=example, schema=schema)
 
@@ -140,9 +159,29 @@ class TestSchemas(unittest.TestCase):
         with open(example_path, "r", encoding="utf-8") as f:
             example = json.load(f)
 
-        example["is_valid"] = "maybe"
+        # Missing required field
+        del example["theorem_name"]
         with self.assertRaises(ValidationError):
             validate(instance=example, schema=schema)
+        example["theorem_name"] = "Infinite parqueting"
+
+        # Unexpected extra field
+        example["unexpected_field"] = "value"
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+        del example["unexpected_field"]
+
+        # Invalid proof_status enum
+        example["proof_status"] = "maybe"
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+        example["proof_status"] = "not_checked"
+
+        # Negative sorry_count
+        example["sorry_count"] = -1
+        with self.assertRaises(ValidationError):
+            validate(instance=example, schema=schema)
+
 
 if __name__ == "__main__":
     unittest.main()

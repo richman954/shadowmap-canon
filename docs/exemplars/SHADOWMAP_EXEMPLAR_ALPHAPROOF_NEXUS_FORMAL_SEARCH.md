@@ -4,7 +4,7 @@
 AlphaProof Nexus claims to solve complex formal verification and proof generation tasks by employing deep reinforcement learning and large language models, specifically leveraging tools like Lean for formal verification.
 
 ## What the Results Repo Actually Contains
-The AlphaProof Nexus repository contains integration code, environment definitions, and trained model weights used to generate proofs for specific mathematical domains.
+The AlphaProof Nexus results repository does not contain the full agent implementation, environment definitions, or trained model weights. It contains mechanically formalized Lean proof outputs and selected natural-language proof writeups.
 
 ## What ShadowMap is Borrowing Structurally
 ShadowMap borrows the structural workflow of formal proof search:

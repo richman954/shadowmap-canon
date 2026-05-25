@@ -4,16 +4,30 @@
   "description": "Schema for a formal proof result.",
   "type": "object",
   "properties": {
-    "problem_statement": { "type": "string" },
-    "survivor_proof": { "type": "string" },
+    "theorem_name": { "type": "string" },
+    "formal_statement": { "type": "string" },
+    "proof_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "failed",
+        "partial",
+        "not_checked"
+      ]
+    },
+    "sorry_count": { "type": "integer", "minimum": 0 },
     "validator": { "type": "string" },
-    "is_valid": { "type": "boolean" }
+    "build_command": { "type": "string" },
+    "shadowmap_interpretation": { "type": "string" }
   },
   "required": [
-    "problem_statement",
-    "survivor_proof",
+    "theorem_name",
+    "formal_statement",
+    "proof_status",
+    "sorry_count",
     "validator",
-    "is_valid"
+    "build_command",
+    "shadowmap_interpretation"
   ],
   "additionalProperties": false
 }

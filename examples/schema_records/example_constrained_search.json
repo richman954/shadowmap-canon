@@ -1,10 +1,16 @@
 {
-  "problem_statement": "Prove the infinite parqueting theorem.",
-  "formal_sketch": "Map to factor graph and use loopy BP.",
-  "constraints": [
-    "Use only polynomial time methods.",
-    "Resulting proof must be constructible."
-  ],
-  "search_strategy": "MCTS with constrained bounds.",
-  "iteration_limit": 1000
+  "object": "Infinite parqueting",
+  "state_space": "Graphs of bounded degree",
+  "initial_state": "Empty graph",
+  "goal_set": "Complete valid tiling",
+  "operators": ["Add tile", "Remove tile"],
+  "hard_constraints": ["No overlaps", "No gaps"],
+  "soft_constraints": ["Minimize boundary"],
+  "heuristic_policy": "Greedy local extension",
+  "evaluator": "Tile boundary checker",
+  "active_bottlenecks": ["Cycle closure"],
+  "surviving_trajectory": "Spiral path",
+  "invariant": "Euler characteristic",
+  "verdict": "moderate ShadowMap",
+  "confidence": "high"
 }
